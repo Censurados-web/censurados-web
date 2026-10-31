@@ -1,0 +1,251 @@
+/* Censurados Film Festival — hoja de estilos
+   Paleta tomada de la línea gráfica oficial del festival. */
+
+:root {
+  --negro: #000000;
+  --blanco: #ffffff;
+  --rojo: #ed3e21;
+  --amarillo: #e7e60f;
+  --agua: #5cffe4;
+  --gris: #a3a3a3;
+
+  --display: "Big Shoulders Display", "Arial Narrow", sans-serif;
+  --texto: "Archivo", system-ui, sans-serif;
+
+  --ancho: 1240px;
+  --margen: clamp(16px, 4vw, 48px);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--negro);
+  color: var(--blanco);
+  font-family: var(--texto);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+p { margin: 0 0 1em; max-width: 68ch; }
+
+:focus-visible { outline: 3px solid var(--agua); outline-offset: 3px; }
+.fondo-agua :focus-visible,
+.fondo-amarillo :focus-visible { outline-color: var(--negro); }
+
+.saltar {
+  position: absolute; left: -999px; top: 8px; z-index: 50;
+  background: var(--amarillo); color: var(--negro); padding: 8px 14px; font-weight: 600;
+}
+.saltar:focus { left: 8px; }
+
+.contenedor { max-width: var(--ancho); margin: 0 auto; padding: 0 var(--margen); }
+
+/* ---------- Tipografía ---------- */
+h1, h2, h3 {
+  font-family: var(--display);
+  font-weight: 800;
+  line-height: 0.92;
+  margin: 0 0 0.4em;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+}
+h1 { font-size: clamp(3.4rem, 11vw, 9.5rem); font-weight: 900; }
+h2 { font-size: clamp(2.4rem, 6vw, 4.75rem); }
+h3 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
+
+.entradilla { font-size: clamp(1.15rem, 1.8vw, 1.4rem); line-height: 1.5; }
+.pequeno { font-size: 0.9rem; color: var(--gris); }
+
+/* ---------- Bloques de color ---------- */
+.bloque { padding: clamp(64px, 10vw, 128px) 0; }
+.fondo-negro { background: var(--negro); color: var(--blanco); }
+.fondo-amarillo { background: var(--amarillo); color: var(--negro); }
+.fondo-rojo { background: var(--rojo); color: var(--negro); }
+.fondo-agua { background: var(--agua); color: var(--negro); }
+.fondo-amarillo .pequeno, .fondo-rojo .pequeno, .fondo-agua .pequeno { color: rgba(0,0,0,.72); }
+
+/* ---------- Cabecera ---------- */
+.cabecera {
+  position: sticky; top: 0; z-index: 20;
+  background: var(--negro);
+  border-bottom: 1px solid #262626;
+}
+.cabecera .contenedor {
+  display: flex; align-items: center; justify-content: space-between;
+  min-height: 68px; gap: 16px;
+}
+.marca { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.marca img { width: 46px; }
+.marca span {
+  font-family: var(--display); font-weight: 800; font-size: 1.35rem;
+  text-transform: uppercase; line-height: 0.9;
+}
+.marca small { display: block; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; }
+
+.menu ul { list-style: none; margin: 0; padding: 0; display: flex; gap: clamp(14px, 2.2vw, 30px); }
+.menu a {
+  font-family: var(--display); font-weight: 700; font-size: 1.15rem;
+  text-transform: uppercase; text-decoration: none; letter-spacing: 0.02em;
+  padding: 6px 0; border-bottom: 3px solid transparent;
+}
+.menu a:hover { border-bottom-color: var(--rojo); }
+.menu a[aria-current="page"] { border-bottom-color: var(--amarillo); }
+
+.boton-menu {
+  display: none; background: none; border: 2px solid var(--blanco); color: var(--blanco);
+  font: 700 1.05rem var(--display); text-transform: uppercase; padding: 6px 12px; cursor: pointer;
+}
+
+@media (max-width: 860px) {
+  .boton-menu { display: block; }
+  .menu { display: none; position: absolute; left: 0; right: 0; top: 100%; background: var(--negro); border-bottom: 1px solid #262626; }
+  .menu.abierto { display: block; }
+  .menu ul { flex-direction: column; gap: 0; padding: 8px var(--margen) 20px; }
+  .menu a { display: block; font-size: 1.6rem; padding: 10px 0; }
+}
+
+/* ---------- Portada: el titular "sin censura" ---------- */
+.portada { padding: clamp(40px, 7vw, 96px) 0 clamp(56px, 8vw, 104px); overflow: hidden; }
+.portada .contenedor { display: grid; grid-template-columns: 1.25fr 1fr; gap: clamp(24px, 4vw, 56px); align-items: end; }
+.portada h1 { margin-bottom: 0.25em; }
+.portada h1 .linea { display: block; }
+.tachado { position: relative; display: inline-block; }
+.tachado::after {
+  content: ""; position: absolute; left: -0.04em; right: -0.04em; top: 0.06em; bottom: 0.02em;
+  background: var(--franja, var(--rojo));
+  transform-origin: right center;
+  animation: descensura 0.7s cubic-bezier(.7,0,.2,1) forwards;
+  animation-delay: var(--retraso, 0.3s);
+}
+@keyframes descensura { to { transform: scaleX(0); } }
+@media (prefers-reduced-motion: reduce) { .tachado::after { animation: none; transform: scaleX(0); } }
+
+.portada figure { margin: 0; }
+.portada figure img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 30% center; }
+.portada figcaption { margin-top: 8px; }
+.portada .entradilla { max-width: 36ch; }
+
+@media (max-width: 860px) {
+  .portada .contenedor { grid-template-columns: 1fr; }
+  .portada figure img { aspect-ratio: 3 / 2; }
+}
+
+/* ---------- Cabeceras de página interior ---------- */
+.cabeza-pagina { padding: clamp(48px, 8vw, 104px) 0 clamp(40px, 6vw, 72px); }
+.cabeza-pagina h1 { font-size: clamp(3rem, 9vw, 7.5rem); }
+.cabeza-pagina .entradilla { max-width: 52ch; }
+
+/* ---------- Rejillas y piezas ---------- */
+.dos-columnas { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 72px); align-items: start; }
+@media (max-width: 760px) { .dos-columnas { grid-template-columns: 1fr; } }
+
+.cita {
+  font-family: var(--display); font-weight: 800; text-transform: uppercase;
+  font-size: clamp(2.2rem, 5.2vw, 4.4rem); line-height: 0.95; margin: 0;
+}
+
+.lista-plana { list-style: none; margin: 0; padding: 0; }
+.lista-plana li { padding: 18px 0; border-top: 2px solid currentColor; }
+.lista-plana li:last-child { border-bottom: 2px solid currentColor; }
+.lista-plana h3 { margin-bottom: 0.15em; }
+.lista-plana p { margin: 0; }
+
+.enlace-grande {
+  display: inline-block; margin-top: 12px;
+  font-family: var(--display); font-weight: 800; font-size: 1.5rem; text-transform: uppercase;
+  text-decoration: none; border-bottom: 4px solid currentColor; padding-bottom: 2px;
+}
+.enlace-grande:hover { border-bottom-color: var(--rojo); }
+.fondo-rojo .enlace-grande:hover { border-bottom-color: var(--blanco); }
+
+/* Tira de carteles en portada */
+.tira { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(200px, 1fr); gap: 16px; overflow-x: auto; padding-bottom: 12px; scroll-snap-type: x mandatory; }
+.tira a { text-decoration: none; scroll-snap-align: start; }
+.tira img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; background: #1a1a1a; }
+.tira .num { font-family: var(--display); font-weight: 800; font-size: 1.5rem; text-transform: uppercase; display: block; margin-top: 8px; line-height: 1; }
+
+/* Fotos */
+.foto-ancha { width: 100%; aspect-ratio: 21 / 9; object-fit: cover; }
+.mosaico { display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: auto auto; gap: 12px; }
+.mosaico img { width: 100%; height: 100%; object-fit: cover; }
+.mosaico img:first-child { grid-row: span 2; }
+@media (max-width: 640px) { .mosaico { grid-template-columns: 1fr; } .mosaico img:first-child { grid-row: auto; } }
+
+/* ---------- Archivo de ediciones ---------- */
+.edicion {
+  display: grid; grid-template-columns: 180px 1fr 280px; gap: clamp(20px, 3vw, 44px);
+  padding: clamp(36px, 5vw, 60px) 0; border-top: 2px solid #333;
+}
+.edicion:last-child { border-bottom: 2px solid #333; }
+.edicion .ordinal { font-family: var(--display); font-weight: 900; font-size: clamp(4rem, 9vw, 7rem); line-height: 0.85; color: var(--color-ed, var(--amarillo)); }
+.edicion .anio { font-family: var(--display); font-weight: 700; font-size: 1.6rem; display: block; margin-top: 6px; }
+.edicion h2 { font-size: clamp(2rem, 4vw, 3rem); }
+.edicion .lugar { font-weight: 600; margin-bottom: 0.8em; }
+.edicion ul { margin: 0; padding-left: 1.1em; max-width: 64ch; }
+.edicion li { margin-bottom: 0.35em; }
+.edicion figure { margin: 0; }
+.edicion figure img { width: 100%; object-fit: cover; }
+.edicion .sin-imagen {
+  aspect-ratio: 3 / 4; background: var(--color-ed, var(--amarillo)); color: var(--negro);
+  display: flex; align-items: center; justify-content: center; padding: 24px;
+}
+.edicion .sin-imagen img { width: 70%; }
+@media (max-width: 960px) {
+  .edicion { grid-template-columns: 1fr; }
+  .edicion figure { max-width: 320px; }
+}
+
+/* ---------- Cine censurado ---------- */
+.formas { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0; border-top: 2px solid var(--negro); }
+.formas div { padding: 22px 22px 22px 0; border-bottom: 2px solid var(--negro); }
+.formas h3 { margin-bottom: 0.2em; }
+.formas p { margin: 0; }
+
+.peliculas { list-style: none; margin: 0; padding: 0; counter-reset: none; }
+.pelicula {
+  display: grid; grid-template-columns: 1fr 2fr; gap: clamp(16px, 3vw, 40px);
+  padding: 28px 0; border-top: 1px solid #3a3a3a;
+}
+.pelicula:last-child { border-bottom: 1px solid #3a3a3a; }
+.pelicula h3 { color: var(--agua); }
+.pelicula .ficha { color: var(--gris); margin: 0; }
+.pelicula .ed {
+  display: inline-block; margin-top: 10px; padding: 2px 10px;
+  background: var(--amarillo); color: var(--negro); font-weight: 700; font-size: 0.85rem; text-decoration: none;
+}
+.pelicula .ed:hover { background: var(--agua); }
+@media (max-width: 760px) { .pelicula { grid-template-columns: 1fr; gap: 8px; } }
+
+/* ---------- Organizadores ---------- */
+.organizador { display: grid; grid-template-columns: 260px 1fr; gap: clamp(24px, 5vw, 64px); align-items: center; }
+.organizador + .organizador { margin-top: clamp(56px, 8vw, 96px); }
+.organizador .logo-org { background: var(--negro); aspect-ratio: 1; display: flex; align-items: center; justify-content: center; padding: 36px; }
+.organizador .logo-org img { width: 100%; }
+.organizador .logo-org .palabra { font-family: var(--display); font-weight: 900; font-size: 3.4rem; line-height: 0.85; text-transform: uppercase; color: var(--amarillo); text-align: center; }
+.organizador .logo-org .palabra small { display: block; font-size: 1.3rem; font-weight: 700; color: var(--blanco); margin-top: 8px; }
+@media (max-width: 760px) { .organizador { grid-template-columns: 1fr; } .organizador .logo-org { max-width: 220px; } }
+
+.apoyos { columns: 2 260px; column-gap: 40px; padding-left: 1.1em; margin: 0; }
+.apoyos li { margin-bottom: 0.4em; break-inside: avoid; }
+
+/* ---------- Pie ---------- */
+.pie { padding: 64px 0 40px; border-top: 1px solid #262626; }
+.pie .contenedor { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 40px; }
+.pie img { width: 150px; }
+.pie h2 { font-size: 1.5rem; margin-bottom: 0.6em; }
+.pie ul { list-style: none; margin: 0; padding: 0; }
+.pie li { margin-bottom: 6px; }
+.pie a:hover { color: var(--amarillo); }
+.pie .legal { grid-column: 1 / -1; color: var(--gris); font-size: 0.85rem; margin: 0; padding-top: 24px; border-top: 1px solid #262626; max-width: none; }
+@media (max-width: 760px) { .pie .contenedor { grid-template-columns: 1fr; } }
+
+/* Direcciones largas (correo) no deben desbordar en móvil */
+.enlace-grande, .pie a { overflow-wrap: anywhere; }
+
+h1, h2 { overflow-wrap: break-word; }
