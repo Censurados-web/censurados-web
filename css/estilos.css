@@ -367,3 +367,6 @@ ul.formas { margin: 0; padding: 0; }
 .foto-pie { margin: 0; }
 .foto-pie figcaption, .edicion figcaption { margin-top: 8px; }
 .fondo-agua .foto-pie img { margin-top: 24px; width: 100%; }
+.equipo-rol { color: var(--amarillo); font-size: 1.5rem; margin: 0 0 0.5em; }
+.equipo { list-style: none; margin: 0 0 32px; padding: 0; }
+.equipo li { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(1.8rem, 3.4vw, 2.6rem); line-height: 1.05; }
