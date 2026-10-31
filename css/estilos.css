@@ -374,3 +374,6 @@ ul.formas { margin: 0; padding: 0; }
 .equipo-secundario { grid-template-columns: repeat(2, 1fr); border-top: 1px solid #333; padding-top: 32px; margin-top: 16px; }
 .equipo-secundario p { font-size: 1.2rem; }
 @media (max-width: 860px) { .equipo-rejilla, .equipo-secundario { grid-template-columns: 1fr; } }
+.fqi-lista { margin: 40px 0 20px; }
+.fondo-negro .lista-plana li { border-color: #444; }
+.edicion li a { color: var(--agua); }
