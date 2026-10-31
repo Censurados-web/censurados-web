@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Convocatoria permanente · Censurados</title>
+<meta name="description" content="Convocatoria permanente de Censurados para películas censuradas, prohibidas o que han sufrido presiones, abierta todo el año.">
+<meta property="og:title" content="Convocatoria permanente · Censurados">
+<meta property="og:description" content="Convocatoria permanente de Censurados para películas censuradas, prohibidas o que han sufrido presiones, abierta todo el año.">
+<meta property="og:image" content="https://censuradosfilmfestival.com/img/fotos/jardin-tupac-noche.jpg">
+<link rel="icon" href="img/icono.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Big+Shoulders+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Ir al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="index.html"><img src="img/alas-blanco.png" alt="" width="46" height="33"><span>Censurados<small>Film Festival</small></span></a>
+    <button class="boton-menu" aria-expanded="false" aria-controls="menu">Menú</button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <ul>
+        <li><a href="conocenos.html">Conócenos</a></li>
+        <li><a href="trayectoria.html">Trayectoria</a></li>
+        <li><a href="observatorio.html">Observatorio</a></li>
+        <li><a href="open-films.html">Open Films</a></li>
+        <li><a href="convocatoria.html" aria-current="page">Convocatoria</a></li>
+        <li><a href="unete.html">Únete</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+<section class="cabeza-pagina fondo-amarillo">
+    <div class="contenedor">
+      <h1>Convocatoria permanente</h1>
+      <p class="entradilla">Abierta todo el año. Revisamos los casos a medida que llegan y elegimos las películas que formarán parte de nuestras actividades: muestras, Open Films y el Observatorio.</p>
+    </div>
+  </section>
+
+  <section class="bloque fondo-negro">
+    <div class="contenedor dos-columnas">
+      <div>
+        <h2>Qué buscamos</h2>
+        <ul class="lista-simple">
+          <li>Películas de cualquier género, duración y país: ficción, documental, animación o experimental.</li>
+          <li>Que hayan sido censuradas, prohibidas, o que hayan sufrido presiones, amenazas o violencia en cualquier momento: investigación, guion, rodaje, posproducción, exhibición o distribución.</li>
+          <li>Por motivos políticos, sociales, corporativos, religiosos o de cualquier otro tipo.</li>
+        </ul>
+        <h2 class="separado">Requisitos</h2>
+        <ul class="lista-simple">
+          <li>Aportar información verificable sobre la censura, presión o amenaza que ha sufrido la obra.</li>
+          <li>Solo puede inscribir la película quien tenga sus derechos.</li>
+          <li>La inscripción es gratuita.</li>
+        </ul>
+      </div>
+
+      <form class="formulario" action="https://formsubmit.co/censuradosfilmfestival@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Convocatoria permanente: nueva película">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://censuradosfilmfestival.com/gracias.html">
+        <input type="text" name="_honey" class="oculto" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <h2>Inscribe tu película</h2>
+        <label>Tu nombre<input type="text" name="Nombre" required autocomplete="name"></label>
+        <label>Correo electrónico<input type="email" name="email" required autocomplete="email"></label>
+        <label>Título de la película<input type="text" name="Título" required></label>
+        <div class="fila">
+          <label>País<input type="text" name="País" required></label>
+          <label>Año<input type="number" name="Año" min="1900" max="2100" required></label>
+          <label>Duración (min)<input type="number" name="Duración" min="1" required></label>
+        </div>
+        <label>Género
+          <select name="Género" required>
+            <option value="">Elige uno</option>
+            <option>Ficción</option><option>Documental</option><option>Animación</option><option>Experimental</option><option>Otro</option>
+          </select>
+        </label>
+        <label>Enlace de visionado<input type="url" name="Enlace de visionado" required placeholder="https://vimeo.com/..."></label>
+        <label>Contraseña del enlace (si tiene)<input type="text" name="Contraseña del enlace"></label>
+        <label>¿Qué censura, presión o amenaza ha sufrido la película?<textarea name="Caso de censura" rows="6" required></textarea></label>
+        <label>Enlaces que lo documenten (noticias, informes, cartas)<textarea name="Pruebas" rows="3"></textarea></label>
+        <label class="casilla"><input type="checkbox" name="Titular de derechos" value="Sí" required> Tengo los derechos de la película y la información que envío es verdadera.</label>
+        <button type="submit" class="boton">Enviar inscripción</button>
+        <p class="pequeno">Usaremos estos datos solo para valorar tu película y contactarte.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="pie fondo-negro">
+  <div class="contenedor">
+    <div>
+      <img src="img/logo-blanco.png" alt="Censurados Film Festival" width="150" height="147">
+      <h2 class="organizan-titulo">Organizan</h2>
+      <a class="organizan" href="conocenos.html#organizadores">
+        <img src="img/lacombi-blanco.png" alt="La Combi – arte rodante" width="444" height="504">
+        <img src="img/tupac-blanco.png" alt="Tupac – Asociación Cultural" width="839" height="733">
+      </a>
+    </div>
+    <div>
+      <h2>Contacto</h2>
+      <ul>
+        <li><a href="mailto:censuradosfilmfestival@gmail.com">censuradosfilmfestival@gmail.com</a></li>
+        <li><a href="convocatoria.html">Envía tu película</a></li>
+        <li><a href="unete.html">Colabora con nosotros</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Redes</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/censuradosfilmfestival/">Instagram</a></li>
+        <li><a href="https://www.facebook.com/censuradosfilmfestival">Facebook</a></li>
+        <li><a href="https://www.youtube.com/channel/UCcZii9CY7aCyMJ9GrzjTRmA">YouTube</a></li>
+      </ul>
+    </div>
+    <p class="legal">Censurados, desde 2014. Organizado por La Combi – arte rodante y Tupac – Asociación Cultural.</p>
+  </div>
+</footer>
+<script src="js/menu.js"></script>
+</body>
+</html>

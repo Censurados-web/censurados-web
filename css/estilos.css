@@ -102,7 +102,7 @@ h3 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
   font: 700 1.05rem var(--display); text-transform: uppercase; padding: 6px 12px; cursor: pointer;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1060px) {
   .boton-menu { display: block; }
   .menu { display: none; position: absolute; left: 0; right: 0; top: 100%; background: var(--negro); border-bottom: 1px solid #262626; }
   .menu.abierto { display: block; }
@@ -185,7 +185,7 @@ h3 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
 .edicion:last-child { border-bottom: 2px solid #333; }
 .edicion .ordinal { font-family: var(--display); font-weight: 900; font-size: clamp(4rem, 9vw, 7rem); line-height: 0.85; color: var(--color-ed, var(--amarillo)); }
 .edicion .anio { font-family: var(--display); font-weight: 700; font-size: 1.6rem; display: block; margin-top: 6px; }
-.edicion h2 { font-size: clamp(2rem, 4vw, 3rem); }
+.edicion h2, .edicion .ed-titulo { font-size: clamp(2rem, 4vw, 3rem); }
 .edicion .lugar { font-weight: 600; margin-bottom: 0.8em; }
 .edicion ul { margin: 0; padding-left: 1.1em; max-width: 64ch; }
 .edicion li { margin-bottom: 0.35em; }
@@ -257,3 +257,110 @@ h1, h2 { overflow-wrap: break-word; }
 .org-combi { font-family: var(--display); font-weight: 900; font-size: 1.9rem; line-height: 0.85; text-transform: uppercase; }
 .org-combi small { display: block; font-size: 0.85rem; font-weight: 700; margin-top: 4px; }
 .organizan:hover .org-combi { color: var(--amarillo); }
+
+/* =========================================================
+   Segunda versión: secciones del proyecto Censurados
+   ========================================================= */
+
+.lema {
+  font-family: var(--display); font-weight: 800; text-transform: uppercase;
+  font-size: clamp(1.5rem, 2.6vw, 2.2rem); line-height: 1; color: var(--amarillo);
+  margin: 0 0 0.8em; max-width: 22ch;
+}
+
+.cita-grande { margin: 0; }
+.cita-grande p {
+  font-family: var(--display); font-weight: 800; text-transform: uppercase;
+  font-size: clamp(2rem, 4.4vw, 3.8rem); line-height: 0.98; max-width: 30ch; margin: 0 0 0.5em;
+}
+.cita-grande footer { font-weight: 600; font-size: 1.15rem; }
+
+.sin-arriba { padding-top: 0; }
+
+/* Accesos a las secciones */
+.tarjetas {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px 20px; margin-top: 12px;
+}
+.tarjeta { text-decoration: none; display: block; }
+.tarjeta img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; filter: grayscale(1) contrast(1.05); transition: filter .25s; }
+.tarjeta:hover img, .tarjeta:focus-visible img { filter: none; }
+.tarjeta-titulo {
+  display: block; margin-top: 12px; font-family: var(--display); font-weight: 800; text-transform: uppercase;
+  font-size: 2rem; line-height: 1; border-bottom: 4px solid var(--amarillo); padding-bottom: 6px;
+}
+.tarjeta:nth-child(3n+2) .tarjeta-titulo { border-color: var(--rojo); }
+.tarjeta:nth-child(3n) .tarjeta-titulo { border-color: var(--agua); }
+.tarjeta-texto { display: block; margin-top: 8px; color: #d6d6d6; }
+@media (max-width: 900px) { .tarjetas { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .tarjetas { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .tarjeta img { transition: none; } }
+
+/* Logos de organizadores en portada */
+.logos-org { display: flex; flex-wrap: wrap; gap: clamp(32px, 6vw, 80px); align-items: flex-end; margin: 12px 0 32px; }
+.logos-org a { text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 12px; font-weight: 600; }
+.logos-org img { height: clamp(110px, 14vw, 160px); width: auto; }
+.colaboran { max-width: 80ch; }
+
+/* Subnavegación dentro de una página */
+.subnav { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+.subnav a {
+  text-decoration: none; font-family: var(--display); font-weight: 700; font-size: 1.15rem; text-transform: uppercase;
+  border: 2px solid currentColor; padding: 6px 14px;
+}
+.subnav a:hover { background: var(--amarillo); color: var(--negro); border-color: var(--amarillo); }
+.subnav-oscura a:hover { background: var(--negro); color: var(--agua); border-color: var(--negro); }
+
+/* Observatorio */
+.anio-archivo {
+  font-size: clamp(2.6rem, 6vw, 4.5rem); color: var(--amarillo); margin: 56px 0 8px;
+}
+.compartir { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin-top: 12px; font-size: 0.92rem; }
+.compartir a { color: var(--agua); }
+.compartir .copiar {
+  background: none; border: 1px solid var(--gris); color: var(--blanco); font: inherit; padding: 2px 10px; cursor: pointer;
+}
+.compartir .copiar:hover { border-color: var(--agua); color: var(--agua); }
+.aviso { border: 3px solid var(--amarillo); padding: clamp(20px, 3vw, 32px); }
+.aviso h3 { color: var(--amarillo); }
+.formas li { list-style: none; }
+ul.formas { margin: 0; padding: 0; }
+.formas-claras { border-top-color: #444; }
+.formas-claras > * { border-bottom-color: #444 !important; padding-right: 28px; }
+.formas-claras h3 { color: var(--amarillo); }
+.formas-claras a { display: inline-block; margin-top: 10px; color: var(--agua); font-weight: 600; }
+.fondo-negro .formas { border-top-color: #444; }
+.fondo-negro .formas > div { border-bottom-color: #444; }
+
+/* Recursos externos */
+.recursos { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px 40px; }
+.recursos a { font-family: var(--display); font-weight: 800; font-size: 1.7rem; text-transform: uppercase; color: var(--agua); }
+.recursos p { margin: 6px 0 0; color: #d6d6d6; }
+
+/* Convocatoria */
+.lista-simple { padding-left: 1.1em; margin: 0 0 1em; }
+.lista-simple li { margin-bottom: 0.6em; max-width: 60ch; }
+.separado { margin-top: 1em; }
+.formulario { background: var(--amarillo); color: var(--negro); padding: clamp(22px, 3.5vw, 40px); }
+.formulario h2 { font-size: clamp(2rem, 4vw, 3rem); }
+.formulario label { display: block; font-weight: 600; margin-bottom: 16px; }
+.formulario input:not([type=checkbox]), .formulario select, .formulario textarea {
+  display: block; width: 100%; margin-top: 6px; padding: 10px 12px;
+  font: 400 1rem var(--texto); color: var(--negro); background: var(--blanco);
+  border: 2px solid var(--negro); border-radius: 0;
+}
+.formulario textarea { resize: vertical; }
+.formulario :focus-visible { outline: 3px solid var(--rojo); outline-offset: 1px; }
+.formulario .fila { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 12px; }
+@media (max-width: 520px) { .formulario .fila { grid-template-columns: 1fr; } }
+.formulario .casilla { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; }
+.formulario .casilla input { margin-top: 5px; width: 18px; height: 18px; flex: none; }
+.oculto { position: absolute; left: -9999px; }
+.boton {
+  font-family: var(--display); font-weight: 800; font-size: 1.5rem; text-transform: uppercase;
+  background: var(--negro); color: var(--amarillo); border: 0; padding: 12px 26px; cursor: pointer;
+}
+.boton:hover { background: var(--rojo); color: var(--negro); }
+.fondo-amarillo img { width: 100%; }
+.formas > li { padding: 22px 22px 22px 0; border-bottom: 2px solid var(--negro); }
+.formulario .pequeno { color: rgba(0,0,0,.75); margin-top: 12px; }
+.formulario .fila { align-items: end; }
