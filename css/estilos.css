@@ -364,3 +364,6 @@ ul.formas { margin: 0; padding: 0; }
 .formas > li { padding: 22px 22px 22px 0; border-bottom: 2px solid var(--negro); }
 .formulario .pequeno { color: rgba(0,0,0,.75); margin-top: 12px; }
 .formulario .fila { align-items: end; }
+.foto-pie { margin: 0; }
+.foto-pie figcaption, .edicion figcaption { margin-top: 8px; }
+.fondo-agua .foto-pie img { margin-top: 24px; width: 100%; }
