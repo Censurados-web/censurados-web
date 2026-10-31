@@ -370,3 +370,7 @@ ul.formas { margin: 0; padding: 0; }
 .equipo-rol { color: var(--amarillo); font-size: 1.5rem; margin: 0 0 0.5em; }
 .equipo { list-style: none; margin: 0 0 32px; padding: 0; }
 .equipo li { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(1.8rem, 3.4vw, 2.6rem); line-height: 1.05; }
+.equipo-rejilla { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px clamp(24px, 4vw, 56px); margin-top: 48px; }
+.equipo-secundario { grid-template-columns: repeat(2, 1fr); border-top: 1px solid #333; padding-top: 32px; margin-top: 16px; }
+.equipo-secundario p { font-size: 1.2rem; }
+@media (max-width: 860px) { .equipo-rejilla, .equipo-secundario { grid-template-columns: 1fr; } }
