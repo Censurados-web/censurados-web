@@ -1,4 +1,4 @@
-// Botones de compartir del Observatorio: copia el enlace o usa el menú del móvil.
+// Botones de compartir del archivo vivo: copia el enlace o usa el menú del móvil.
 (function () {
   document.querySelectorAll('.compartir').forEach(function (caja) {
     var url = caja.dataset.url;
