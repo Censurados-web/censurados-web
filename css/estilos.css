@@ -461,3 +461,11 @@ ul.formas { margin: 0; padding: 0; }
 .pilares p { margin: 0; }
 @media (max-width: 900px) { .pilares { grid-template-columns: 1fr 1fr; } .pilares li:not(:nth-child(3n)) { border-right: 0; } .pilares li:nth-child(odd) { border-right: 2px solid var(--negro); } }
 @media (max-width: 560px) { .pilares { grid-template-columns: 1fr; } .pilares li:nth-child(odd) { border-right: 0; } }
+
+/* En ruta */
+.cita-tratan { font-family: var(--display); font-weight: 800; font-size: clamp(1.6rem, 3vw, 2.4rem); line-height: 1.05; text-transform: uppercase; margin: 0.4em 0 0; }
+.cifras-claras { margin: clamp(32px, 5vw, 56px) 0; }
+.cifras-claras li, .cifras-claras li:nth-child(n) { border-color: var(--negro); }
+.cifras-claras span { color: var(--negro); }
+.enlace-tratan { margin-top: 24px; }
+.enlace-tratan a { color: inherit; font-weight: 600; }
