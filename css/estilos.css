@@ -427,3 +427,14 @@ ul.formas { margin: 0; padding: 0; }
 /* Gira Las Tratan dentro de Muestras itinerantes */
 .las-tratan { margin-top: clamp(40px, 6vw, 72px); }
 .subtitulo-seccion { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.4em; }
+
+/* En un vistazo */
+.cifras { list-style: none; margin: 0 0 clamp(40px, 6vw, 72px); padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(16px, 3vw, 40px); }
+.cifras li { border-top: 3px solid var(--amarillo); padding-top: 14px; }
+.cifras li:nth-child(2) { border-color: var(--rojo); }
+.cifras li:nth-child(3) { border-color: var(--agua); }
+.cifras li:nth-child(4) { border-color: var(--gris); }
+.cifras strong { display: block; font-family: var(--display); font-weight: 900; font-size: clamp(3rem, 7vw, 5.5rem); line-height: 0.9; }
+.cifras span { display: block; margin-top: 8px; color: #d6d6d6; }
+.vistazo-textos h3 { color: var(--amarillo); }
+@media (max-width: 760px) { .cifras { grid-template-columns: 1fr 1fr; } }
