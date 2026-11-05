@@ -423,3 +423,7 @@ ul.formas { margin: 0; padding: 0; }
 .criterios li { padding: 10px 0; border-bottom: 2px solid var(--negro); font-weight: 600; }
 @media (max-width: 760px) { .criterios { grid-template-columns: 1fr; } }
 .video-portada { margin-top: 0; aspect-ratio: 16 / 9; max-height: none; }
+
+/* Gira Las Tratan dentro de Muestras itinerantes */
+.las-tratan { margin-top: clamp(40px, 6vw, 72px); }
+.subtitulo-seccion { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.4em; }
