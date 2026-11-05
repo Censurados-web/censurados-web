@@ -438,3 +438,14 @@ ul.formas { margin: 0; padding: 0; }
 .cifras span { display: block; margin-top: 8px; color: #d6d6d6; }
 .vistazo-textos h3 { color: var(--amarillo); }
 @media (max-width: 760px) { .cifras { grid-template-columns: 1fr 1fr; } }
+
+/* En los medios */
+.prensa { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(24px, 4vw, 48px); margin: clamp(24px, 4vw, 40px) 0; }
+.prensa-ed h3 { font-size: 1.5rem; color: var(--amarillo); border-bottom: 2px solid #444; padding-bottom: 8px; margin-bottom: 10px; }
+.prensa-ed ul { list-style: none; margin: 0; padding: 0; }
+.prensa-ed li { padding: 6px 0; border-bottom: 1px solid #262626; display: flex; justify-content: space-between; gap: 12px; }
+.prensa-ed a { color: var(--blanco, #fff); text-decoration: none; font-weight: 600; }
+.prensa-ed a::after { content: " ↗"; color: var(--agua); }
+.prensa-ed a:hover { color: var(--agua); }
+.prensa-ed li span { color: var(--gris); font-size: 0.85rem; text-align: right; }
+.prensa-sin { color: #d6d6d6; }
