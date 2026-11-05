@@ -473,3 +473,5 @@ ul.formas { margin: 0; padding: 0; }
 .conocenos-intro { margin-top: clamp(16px, 3vw, 32px); align-items: start; }
 .conocenos-intro .entradilla { max-width: none; margin-top: 0; }
 .conocenos-intro p:first-child { margin-top: 0; }
+
+.fqi-cartel img { max-width: 440px; width: 100%; }
