@@ -236,17 +236,14 @@ h3 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
   background: var(--franja, var(--rojo)); mix-blend-mode: normal; opacity: 0.92;
 }
 
-/* Historia de la censura desplegable */
-.historia { margin: 6px 0 14px; border-top: 1px solid #3a3a3a; border-bottom: 1px solid #3a3a3a; max-width: 62ch; }
-.historia summary {
-  cursor: pointer; list-style: none; padding: 12px 0; font-family: var(--display); font-weight: 800;
+/* Historia de la censura */
+.historia { margin: 6px 0 16px; padding-left: 18px; border-left: 3px solid var(--rojo); max-width: 62ch; }
+.historia .historia-titulo {
+  margin: 0 0 0.5em; font-family: var(--display); font-weight: 800;
   text-transform: uppercase; letter-spacing: 0.02em; color: var(--rojo);
 }
-.historia summary::-webkit-details-marker { display: none; }
-.historia summary::before { content: "+ "; }
-.historia[open] summary::before { content: "– "; }
-.historia summary:hover { color: var(--amarillo); }
 .historia p { color: #dcdcdc; }
+.historia p:last-child { margin-bottom: 0; }
 .trailer { margin: 0 0 12px; }
 .trailer a { color: var(--agua); font-weight: 600; }
 @media (max-width: 760px) { .pelicula { grid-template-columns: 1fr; gap: 14px; } }
