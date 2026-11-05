@@ -1,6 +1,6 @@
 # Censurados Film Festival
 
-Web oficial de Censurados Film Festival — cine, censura y derechos humanos (2014–2026).
+Web oficial de Censurados Film Festival — festival de cine por la libertad de expresión (2014–2025).
 https://censuradosfilmfestival.com
 
 Web estática (HTML + CSS), sin dependencias ni compilación. Se publica tal cual desde la rama `main`.
