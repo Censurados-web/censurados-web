@@ -476,3 +476,17 @@ ul.formas { margin: 0; padding: 0; }
 
 .fqi-cartel img { max-width: 440px; width: 100%; }
 .fqi-foto { margin: clamp(32px, 5vw, 56px) 0; }
+
+/* Palmarés */
+.palmares-ed { display: grid; grid-template-columns: 180px 1fr; gap: clamp(16px, 3vw, 40px); padding: 28px 0; border-top: 2px solid #444; }
+.palmares-ed:last-child { border-bottom: 2px solid #444; }
+.palmares-anio a { text-decoration: none; color: inherit; display: block; }
+.palmares-anio span { display: block; font-family: var(--display); font-weight: 800; text-transform: uppercase; color: var(--amarillo); font-size: 1.1rem; }
+.palmares-anio strong { display: block; font-family: var(--display); font-weight: 900; font-size: clamp(2.6rem, 5vw, 3.6rem); line-height: 0.9; }
+.palmares-ed ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 22px 32px; }
+.palmares-ed li { display: flex; flex-direction: column; gap: 2px; }
+.palmares-cat { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--rojo); }
+.palmares-tit { font-style: normal; font-family: var(--display); font-weight: 800; font-size: 1.45rem; line-height: 1.05; text-transform: uppercase; }
+.palmares-tit a { color: var(--agua); text-decoration: none; }
+.palmares-ficha { color: var(--gris); font-size: 0.9rem; }
+@media (max-width: 700px) { .palmares-ed { grid-template-columns: 1fr; } }
