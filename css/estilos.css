@@ -498,3 +498,6 @@ ul.formas { margin: 0; padding: 0; }
 .palmares-censura .palmares-ficha { color: #333; }
 .palmares-censura .palmares-tit a { color: var(--negro); text-decoration: underline; }
 .palmares-ed ul { align-items: start; }
+.video-invitados { width: 100%; max-width: 480px; aspect-ratio: 4 / 5; justify-self: end; background: #000; }
+.invitados { align-items: center; }
+@media (max-width: 760px) { .video-invitados { justify-self: stretch; max-width: none; } }
