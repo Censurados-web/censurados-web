@@ -38,11 +38,39 @@
 <section class="cabeza-pagina fondo-amarillo">
     <div class="contenedor">
       <h1>Convocatoria permanente</h1>
-      <p class="entradilla">Abierta todo el año. Revisamos los casos a medida que llegan y elegimos las películas que formarán parte de nuestras actividades: muestras y el Archivo vivo de cine censurado.</p>
+      <p class="entradilla">Abierta todo el año. Si conoces un caso de censura, avísanos, también de forma anónima. Y si tienes los derechos de una película censurada, inscríbela.</p>
+      <nav class="subnav" aria-label="Secciones de la convocatoria">
+        <a href="#avisa">Avisa de un caso</a>
+        <a href="#inscribe">Inscribe tu película</a>
+      </nav>
     </div>
   </section>
 
-  <section class="bloque fondo-negro">
+  <section class="bloque fondo-rojo" id="avisa">
+    <div class="contenedor dos-columnas">
+      <div>
+        <h2>Avisa de un caso de censura</h2>
+        <p class="entradilla">¿Sabes de una película que ha sido prohibida, retirada, amenazada o presionada? Cuéntanoslo.</p>
+        <p>No te pedimos tu nombre. El correo es opcional: déjalo solo si quieres que te respondamos. Investigaremos el caso con discreción y, si se confirma, podrá entrar en el <a href="observatorio.html#archivo">Archivo vivo</a> o en la programación.</p>
+      </div>
+      <form class="formulario" action="https://formsubmit.co/censuradosfilmfestival@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Aviso de caso de censura (anónimo)">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://censuradosfilmfestival.com/gracias.html">
+        <input type="text" name="_honey" class="oculto" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label>Título de la película (si lo sabes)<input type="text" name="Título"></label>
+        <label>País<input type="text" name="País"></label>
+        <label>¿Qué ha pasado?<textarea name="Caso" rows="6" required placeholder="Quién la censuró, cuándo, cómo…"></textarea></label>
+        <label>Enlaces o fuentes (opcional)<textarea name="Fuentes" rows="3"></textarea></label>
+        <label>Correo para responderte (opcional)<input type="email" name="Correo de contacto (opcional)" autocomplete="off"></label>
+        <button type="submit" class="boton">Enviar aviso</button>
+        <p class="pequeno">No pedimos tu nombre. Si no escribes tu correo, el aviso nos llega sin datos tuyos.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="bloque fondo-negro" id="inscribe">
     <div class="contenedor dos-columnas">
       <div>
         <h2>Qué buscamos</h2>
