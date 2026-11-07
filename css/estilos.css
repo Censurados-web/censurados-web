@@ -507,3 +507,13 @@ ul.formas { margin: 0; padding: 0; }
 .no-censura { margin-top: clamp(32px, 5vw, 56px); padding: clamp(20px, 3vw, 32px); background: var(--negro); color: var(--blanco); max-width: 860px; }
 .no-censura h3 { color: var(--amarillo); margin-top: 0; }
 .no-censura p { margin: 0; }
+
+/* Observatorio: lema y verbos */
+.lema-obs { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.02; margin: 0.2em 0 0.4em; color: var(--negro); }
+.lema-obs span { background: var(--negro); color: var(--amarillo); padding: 0 0.15em; }
+.verbos-obs { list-style: none; margin: 0; padding: 0; }
+.verbos-obs li { padding: 16px 0; border-top: 2px solid #3a3a3a; color: #dcdcdc; }
+.verbos-obs li:last-child { border-bottom: 2px solid #3a3a3a; }
+.verbos-obs strong { display: block; font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1; margin-bottom: 6px; color: var(--blanco); }
+.verbos-obs li:nth-child(2) strong { color: var(--rojo); }
+.verbos-obs li:nth-child(3) strong { color: var(--amarillo); }
