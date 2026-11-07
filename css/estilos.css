@@ -501,3 +501,9 @@ ul.formas { margin: 0; padding: 0; }
 .video-invitados { width: 100%; max-width: 480px; aspect-ratio: 4 / 5; justify-self: end; background: #000; }
 .invitados { align-items: center; }
 @media (max-width: 760px) { .video-invitados { justify-self: stretch; max-width: none; } }
+.criterios-cuatro { grid-template-columns: 1.3fr 1fr 1fr 1fr; }
+@media (max-width: 1000px) { .criterios-cuatro { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 760px) { .criterios-cuatro { grid-template-columns: 1fr; } }
+.no-censura { margin-top: clamp(32px, 5vw, 56px); padding: clamp(20px, 3vw, 32px); background: var(--negro); color: var(--blanco); max-width: 860px; }
+.no-censura h3 { color: var(--amarillo); margin-top: 0; }
+.no-censura p { margin: 0; }
