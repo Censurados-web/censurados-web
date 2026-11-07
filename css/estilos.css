@@ -546,3 +546,4 @@ ul.formas { margin: 0; padding: 0; }
 .dialogo-caso .ficha { color: var(--gris); margin: 0; }
 .dialogo-caso .ed { display: inline-block; margin: 10px 0 18px; padding: 2px 10px; background: var(--amarillo); color: var(--negro); font-weight: 700; font-size: 0.85rem; text-decoration: none; }
 .dialogo-caso .historia { max-width: none; }
+.criterios-intro { max-width: 62ch; color: var(--negro); margin-bottom: 24px; }
