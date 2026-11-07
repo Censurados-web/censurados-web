@@ -68,278 +68,367 @@
     <div class="contenedor">
       <h2>Archivo vivo de cine censurado</h2>
       <p class="entradilla">Un archivo que busca reunir todos estos casos. En su primera fase lo forman las películas censuradas que han pasado por Censurados desde 2014, ordenadas por el año de la edición: cada una con su caso, para conocerla y compartirla. Y crece con cada nueva investigación.</p>
-      <h3 class="anio-archivo">2024</h3>
-      <ul class="peliculas">
-        <li class="pelicula" id="el-decreto">
-          <figure class="pel-foto sin-foto" style="--franja:var(--rojo)" aria-hidden="true"><span>El decreto</span></figure>
-          <div class="pel-texto">
-          <h3>El decreto</h3><p class="ficha">Nejla Demirci · Turquía · 2023 · Documental, 96 min</p><a class="ed" href="trayectoria.html#e10">10.ª edición</a>
-          <p>Tras el intento de golpe de Estado de 2016 en Turquía, miles de funcionarios fueron expulsados por decreto. La doctora Yasemin y el profesor Engin luchan por recuperar su trabajo, mientras el presidente Erdoğan los llama «terroristas». Tijera a la mejor película censurada en la 10.ª edición.</p>
-          <div class="historia"><p class="historia-titulo">El caso</p><p>La policía obstruyó el rodaje una y otra vez, hasta que se prohibió filmar. La directora demandó al Estado y el Tribunal Constitucional le dio la razón, pero poco después le embargaron las cuentas por las multas que le habían impuesto durante la grabación.</p><p>En 2023 fue retirada de la competencia del Festival Golden Orange de Antalya por presión del gobierno. Dimitieron 20 miembros del jurado y 27 películas se retiraron en protesta, así que el festival volvió a incluirla. Entonces el Ministerio de Cultura le retiró su apoyo acusándolo de hacer propaganda terrorista, los patrocinadores se fueron y, ante las amenazas, el festival se canceló.</p></div>
-          <div class="compartir" data-url="https://censuradosfilmfestival.com/observatorio.html#el-decreto" data-titulo="El decreto — Archivo vivo de cine censurado">
-            <span class="pequeno">Compartir:</span>
-            <a href="https://wa.me/?text=El%20decreto%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23el-decreto" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23el-decreto" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?text=El%20decreto%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23el-decreto" target="_blank" rel="noopener">X</a>
-            <button type="button" class="copiar">Copiar enlace</button>
-          </div>
-          </div>
-        </li>
-        <li class="pelicula" id="la-habana-de-fito">
-          <figure class="pel-foto sin-foto" style="--franja:var(--amarillo)" aria-hidden="true"><span>La Habana de Fito</span></figure>
-          <div class="pel-texto">
-          <h3>La Habana de Fito</h3><p class="ficha">Juan Pin Vilar · Argentina y Cuba · 2022 · Documental, 61 min</p><a class="ed" href="trayectoria.html#e10">10.ª edición</a>
-          <p>La compleja realidad de Cuba a través de la mirada crítica, pero siempre amorosa, de Fito Páez y de figuras de la cultura iberoamericana.</p>
-          <div class="historia"><p class="historia-titulo">El caso</p><p>Aunque la financió el propio Fondo de Fomento del Cine Cubano, en abril de 2023 el Ministerio de Cultura suspendió su proyección en El Ciervo Encantado, una pequeña sala independiente de La Habana, junto a otros dos documentales. El director pidió explicaciones y nunca las recibió.</p><p>En junio, la televisión estatal la emitió sin su permiso en un programa donde los tertulianos criticaron a Fito Páez. La reacción de los cineastas dio origen a una asamblea independiente, con cientos de firmas, que reclama el fin de la censura, más libertad creativa y una ley de cine.</p></div>
-          <div class="compartir" data-url="https://censuradosfilmfestival.com/observatorio.html#la-habana-de-fito" data-titulo="La Habana de Fito — Archivo vivo de cine censurado">
-            <span class="pequeno">Compartir:</span>
-            <a href="https://wa.me/?text=La%20Habana%20de%20Fito%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23la-habana-de-fito" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23la-habana-de-fito" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?text=La%20Habana%20de%20Fito%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23la-habana-de-fito" target="_blank" rel="noopener">X</a>
-            <button type="button" class="copiar">Copiar enlace</button>
-          </div>
+      <div class="buscador" role="search">
+        <label class="busca-texto"><span>Buscar</span><input type="search" id="busca" placeholder="Título, país, director, tema…" autocomplete="off"></label>
+        <label><span>Edición</span><select id="filtro-anio"><option value="">Todas</option><option value="2024">2024</option><option value="2021">2021</option><option value="2019">2019</option></select></label>
+        <label><span>País</span><select id="filtro-pais"><option value="">Todos</option><option value="Alemania">Alemania</option><option value="Argentina">Argentina</option><option value="Canadá">Canadá</option><option value="Cuba">Cuba</option><option value="Dinamarca">Dinamarca</option><option value="España">España</option><option value="Estados Unidos">Estados Unidos</option><option value="Guatemala">Guatemala</option><option value="Irán">Irán</option><option value="Italia">Italia</option><option value="Kenia">Kenia</option><option value="México">México</option><option value="Perú">Perú</option><option value="Tayikistán">Tayikistán</option><option value="Turquía">Turquía</option></select></label>
+        <p class="pequeno" id="contador" aria-live="polite"></p>
+      </div>
+      <ul class="archivo-grid">
+        <li class="ficha-archivo" id="el-decreto" data-anio="2024" data-pais="Turquía" data-texto="el decreto nejla demirci · turquía · 2023 · documental, 96 min el decreto nejla demirci · turquía · 2023 · documental, 96 min 10.ª edición tras el intento de golpe de estado de 2016 en turquía, miles de funcionarios fueron expulsados por decreto. la doctora yasemin y el profesor engin luchan por recuperar su trabajo, mientras el presidente erdoğan los llama «terroristas». tijera a la mejor película censurada en la 10.ª edición. el caso la policía obstruyó el rodaje una y otra vez, hasta que se prohibió filmar. la directora demandó al estado y el tribunal constitucional le dio la razón, pero poco después le embargaron las cuentas por las multas que le habían impuesto durante la grabación. en 2023 fue retirada de la competencia del festival golden orange de antalya por presión del gobierno. dimitieron 20 miembros del jurado y 27 películas se retiraron en protesta, así que el festival volvió a incluirla. entonces el ministerio de cultura le retiró su apoyo acusándolo de hacer propaganda terrorista, los patrocinadores se fueron y, ante las amenazas, el festival se canceló. compartir: whatsapp facebook x copiar enlace">
+          <button type="button" class="abrir-caso" aria-haspopup="dialog">
+            <figure aria-hidden="true" class="pel-foto sin-foto" style="--franja:var(--rojo)"><span>El decreto</span></figure>
+            <span class="fa-titulo">El decreto</span>
+            <span class="fa-ficha">Nejla Demirci · Turquía · 2023 · Documental, 96 min</span>
+            <span class="fa-ed">10.ª edición</span>
+          </button>
+          <div class="caso" hidden>
+            <h3>El decreto</h3><p class="ficha">Nejla Demirci · Turquía · 2023 · Documental, 96 min</p><a class="ed" href="trayectoria.html#e10">10.ª edición</a>
+            <p>Tras el intento de golpe de Estado de 2016 en Turquía, miles de funcionarios fueron expulsados por decreto. La doctora Yasemin y el profesor Engin luchan por recuperar su trabajo, mientras el presidente Erdoğan los llama «terroristas». Tijera a la mejor película censurada en la 10.ª edición.</p>
+<div class="historia"><p class="historia-titulo">El caso</p><p>La policía obstruyó el rodaje una y otra vez, hasta que se prohibió filmar. La directora demandó al Estado y el Tribunal Constitucional le dio la razón, pero poco después le embargaron las cuentas por las multas que le habían impuesto durante la grabación.</p><p>En 2023 fue retirada de la competencia del Festival Golden Orange de Antalya por presión del gobierno. Dimitieron 20 miembros del jurado y 27 películas se retiraron en protesta, así que el festival volvió a incluirla. Entonces el Ministerio de Cultura le retiró su apoyo acusándolo de hacer propaganda terrorista, los patrocinadores se fueron y, ante las amenazas, el festival se canceló.</p></div>
+<div class="compartir" data-titulo="El decreto — Archivo vivo de cine censurado" data-url="https://censuradosfilmfestival.com/observatorio.html#el-decreto">
+<span class="pequeno">Compartir:</span>
+<a href="https://wa.me/?text=El%20decreto%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23el-decreto" rel="noopener" target="_blank">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23el-decreto" rel="noopener" target="_blank">Facebook</a>
+<a href="https://twitter.com/intent/tweet?text=El%20decreto%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23el-decreto" rel="noopener" target="_blank">X</a>
+<button class="copiar" type="button">Copiar enlace</button>
+</div>
           </div>
         </li>
-        <li class="pelicula" id="transformation">
-          <figure class="pel-foto sin-foto" style="--franja:var(--agua)" aria-hidden="true"><span>Transformation</span></figure>
-          <div class="pel-texto">
-          <h3>Transformation</h3><p class="ficha">Saeed Mayahy y Miriam Carlsen · Irán, Turquía y Dinamarca · 2023 · Documental, 52 min</p><a class="ed" href="trayectoria.html#e10">10.ª edición</a>
-          <p>Malika, una mujer trans, y Mohamed huyen de Kabul tras la llegada de los talibanes para vivir su amor en Estambul, donde se enfrentan a la pobreza, el acoso y el miedo a la deportación.</p>
-          <div class="historia"><p class="historia-titulo">El caso</p><p>Se rodó sin permiso y a escondidas. Aun así, la policía detuvo el rodaje al ver que una de las protagonistas era una mujer trans y obligó al director, un refugiado iraní, a deshacerse de todo lo grabado ese día.</p><p>Nunca se ha proyectado en Turquía, ni en salas ni en festivales: el Ministerio de Cultura prohíbe las obras audiovisuales con personajes homosexuales por considerar que no cumplen sus reglas morales.</p></div>
-          <div class="compartir" data-url="https://censuradosfilmfestival.com/observatorio.html#transformation" data-titulo="Transformation — Archivo vivo de cine censurado">
-            <span class="pequeno">Compartir:</span>
-            <a href="https://wa.me/?text=Transformation%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23transformation" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23transformation" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?text=Transformation%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23transformation" target="_blank" rel="noopener">X</a>
-            <button type="button" class="copiar">Copiar enlace</button>
-          </div>
+        <li class="ficha-archivo" id="la-habana-de-fito" data-anio="2024" data-pais="Argentina y Cuba" data-texto="la habana de fito juan pin vilar · argentina y cuba · 2022 · documental, 61 min la habana de fito juan pin vilar · argentina y cuba · 2022 · documental, 61 min 10.ª edición la compleja realidad de cuba a través de la mirada crítica, pero siempre amorosa, de fito páez y de figuras de la cultura iberoamericana. el caso aunque la financió el propio fondo de fomento del cine cubano, en abril de 2023 el ministerio de cultura suspendió su proyección en el ciervo encantado, una pequeña sala independiente de la habana, junto a otros dos documentales. el director pidió explicaciones y nunca las recibió. en junio, la televisión estatal la emitió sin su permiso en un programa donde los tertulianos criticaron a fito páez. la reacción de los cineastas dio origen a una asamblea independiente, con cientos de firmas, que reclama el fin de la censura, más libertad creativa y una ley de cine. compartir: whatsapp facebook x copiar enlace">
+          <button type="button" class="abrir-caso" aria-haspopup="dialog">
+            <figure aria-hidden="true" class="pel-foto sin-foto" style="--franja:var(--amarillo)"><span>La Habana de Fito</span></figure>
+            <span class="fa-titulo">La Habana de Fito</span>
+            <span class="fa-ficha">Juan Pin Vilar · Argentina y Cuba · 2022 · Documental, 61 min</span>
+            <span class="fa-ed">10.ª edición</span>
+          </button>
+          <div class="caso" hidden>
+            <h3>La Habana de Fito</h3><p class="ficha">Juan Pin Vilar · Argentina y Cuba · 2022 · Documental, 61 min</p><a class="ed" href="trayectoria.html#e10">10.ª edición</a>
+            <p>La compleja realidad de Cuba a través de la mirada crítica, pero siempre amorosa, de Fito Páez y de figuras de la cultura iberoamericana.</p>
+<div class="historia"><p class="historia-titulo">El caso</p><p>Aunque la financió el propio Fondo de Fomento del Cine Cubano, en abril de 2023 el Ministerio de Cultura suspendió su proyección en El Ciervo Encantado, una pequeña sala independiente de La Habana, junto a otros dos documentales. El director pidió explicaciones y nunca las recibió.</p><p>En junio, la televisión estatal la emitió sin su permiso en un programa donde los tertulianos criticaron a Fito Páez. La reacción de los cineastas dio origen a una asamblea independiente, con cientos de firmas, que reclama el fin de la censura, más libertad creativa y una ley de cine.</p></div>
+<div class="compartir" data-titulo="La Habana de Fito — Archivo vivo de cine censurado" data-url="https://censuradosfilmfestival.com/observatorio.html#la-habana-de-fito">
+<span class="pequeno">Compartir:</span>
+<a href="https://wa.me/?text=La%20Habana%20de%20Fito%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23la-habana-de-fito" rel="noopener" target="_blank">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23la-habana-de-fito" rel="noopener" target="_blank">Facebook</a>
+<a href="https://twitter.com/intent/tweet?text=La%20Habana%20de%20Fito%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23la-habana-de-fito" rel="noopener" target="_blank">X</a>
+<button class="copiar" type="button">Copiar enlace</button>
+</div>
           </div>
         </li>
-        <li class="pelicula" id="vicenta-b">
-          <figure class="pel-foto sin-foto" style="--franja:var(--rojo)" aria-hidden="true"><span>Vicenta B</span></figure>
-          <div class="pel-texto">
-          <h3>Vicenta B</h3><p class="ficha">Carlos Lechuga · Cuba · 2022 · Ficción, 75 min</p><a class="ed" href="trayectoria.html#e10">10.ª edición</a>
-          <p>Vicenta, santera de La Habana, ve el futuro de quienes llegan a su casa buscando soluciones. Cuando su único hijo decide irse del país, deja de ver con claridad su propia vida.</p>
-          <div class="historia"><p class="historia-titulo">El caso</p><p>En 2022 apareció en la programación que circulaba del Festival de Cine de La Habana, en la competencia latinoamericana, pero nunca llegó a proyectarse. Según su director, el Ministerio de Cultura presionó al festival para que no se viera en la isla y solo se le ofreció un par de pases fuera de competencia, que él rechazó por ser «una orden policial» y no una decisión artística.</p><p>El presidente del ICAIC negó la censura, pero acusó a Lechuga de haber roto con la Revolución y de usar los festivales internacionales para atacarla.</p></div>
-          <div class="compartir" data-url="https://censuradosfilmfestival.com/observatorio.html#vicenta-b" data-titulo="Vicenta B — Archivo vivo de cine censurado">
-            <span class="pequeno">Compartir:</span>
-            <a href="https://wa.me/?text=Vicenta%20B%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23vicenta-b" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23vicenta-b" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?text=Vicenta%20B%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23vicenta-b" target="_blank" rel="noopener">X</a>
-            <button type="button" class="copiar">Copiar enlace</button>
+        <li class="ficha-archivo" id="transformation" data-anio="2024" data-pais="Irán, Turquía y Dinamarca" data-texto="transformation saeed mayahy y miriam carlsen · irán, turquía y dinamarca · 2023 · documental, 52 min transformation saeed mayahy y miriam carlsen · irán, turquía y dinamarca · 2023 · documental, 52 min 10.ª edición malika, una mujer trans, y mohamed huyen de kabul tras la llegada de los talibanes para vivir su amor en estambul, donde se enfrentan a la pobreza, el acoso y el miedo a la deportación. el caso se rodó sin permiso y a escondidas. aun así, la policía detuvo el rodaje al ver que una de las protagonistas era una mujer trans y obligó al director, un refugiado iraní, a deshacerse de todo lo grabado ese día. nunca se ha proyectado en turquía, ni en salas ni en festivales: el ministerio de cultura prohíbe las obras audiovisuales con personajes homosexuales por considerar que no cumplen sus reglas morales. compartir: whatsapp facebook x copiar enlace">
+          <button type="button" class="abrir-caso" aria-haspopup="dialog">
+            <figure aria-hidden="true" class="pel-foto sin-foto" style="--franja:var(--agua)"><span>Transformation</span></figure>
+            <span class="fa-titulo">Transformation</span>
+            <span class="fa-ficha">Saeed Mayahy y Miriam Carlsen · Irán, Turquía y Dinamarca · 2023 · Documental, 52 min</span>
+            <span class="fa-ed">10.ª edición</span>
+          </button>
+          <div class="caso" hidden>
+            <h3>Transformation</h3><p class="ficha">Saeed Mayahy y Miriam Carlsen · Irán, Turquía y Dinamarca · 2023 · Documental, 52 min</p><a class="ed" href="trayectoria.html#e10">10.ª edición</a>
+            <p>Malika, una mujer trans, y Mohamed huyen de Kabul tras la llegada de los talibanes para vivir su amor en Estambul, donde se enfrentan a la pobreza, el acoso y el miedo a la deportación.</p>
+<div class="historia"><p class="historia-titulo">El caso</p><p>Se rodó sin permiso y a escondidas. Aun así, la policía detuvo el rodaje al ver que una de las protagonistas era una mujer trans y obligó al director, un refugiado iraní, a deshacerse de todo lo grabado ese día.</p><p>Nunca se ha proyectado en Turquía, ni en salas ni en festivales: el Ministerio de Cultura prohíbe las obras audiovisuales con personajes homosexuales por considerar que no cumplen sus reglas morales.</p></div>
+<div class="compartir" data-titulo="Transformation — Archivo vivo de cine censurado" data-url="https://censuradosfilmfestival.com/observatorio.html#transformation">
+<span class="pequeno">Compartir:</span>
+<a href="https://wa.me/?text=Transformation%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23transformation" rel="noopener" target="_blank">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23transformation" rel="noopener" target="_blank">Facebook</a>
+<a href="https://twitter.com/intent/tweet?text=Transformation%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23transformation" rel="noopener" target="_blank">X</a>
+<button class="copiar" type="button">Copiar enlace</button>
+</div>
           </div>
+        </li>
+        <li class="ficha-archivo" id="vicenta-b" data-anio="2024" data-pais="Cuba" data-texto="vicenta b carlos lechuga · cuba · 2022 · ficción, 75 min vicenta b carlos lechuga · cuba · 2022 · ficción, 75 min 10.ª edición vicenta, santera de la habana, ve el futuro de quienes llegan a su casa buscando soluciones. cuando su único hijo decide irse del país, deja de ver con claridad su propia vida. el caso en 2022 apareció en la programación que circulaba del festival de cine de la habana, en la competencia latinoamericana, pero nunca llegó a proyectarse. según su director, el ministerio de cultura presionó al festival para que no se viera en la isla y solo se le ofreció un par de pases fuera de competencia, que él rechazó por ser «una orden policial» y no una decisión artística. el presidente del icaic negó la censura, pero acusó a lechuga de haber roto con la revolución y de usar los festivales internacionales para atacarla. compartir: whatsapp facebook x copiar enlace">
+          <button type="button" class="abrir-caso" aria-haspopup="dialog">
+            <figure aria-hidden="true" class="pel-foto sin-foto" style="--franja:var(--rojo)"><span>Vicenta B</span></figure>
+            <span class="fa-titulo">Vicenta B</span>
+            <span class="fa-ficha">Carlos Lechuga · Cuba · 2022 · Ficción, 75 min</span>
+            <span class="fa-ed">10.ª edición</span>
+          </button>
+          <div class="caso" hidden>
+            <h3>Vicenta B</h3><p class="ficha">Carlos Lechuga · Cuba · 2022 · Ficción, 75 min</p><a class="ed" href="trayectoria.html#e10">10.ª edición</a>
+            <p>Vicenta, santera de La Habana, ve el futuro de quienes llegan a su casa buscando soluciones. Cuando su único hijo decide irse del país, deja de ver con claridad su propia vida.</p>
+<div class="historia"><p class="historia-titulo">El caso</p><p>En 2022 apareció en la programación que circulaba del Festival de Cine de La Habana, en la competencia latinoamericana, pero nunca llegó a proyectarse. Según su director, el Ministerio de Cultura presionó al festival para que no se viera en la isla y solo se le ofreció un par de pases fuera de competencia, que él rechazó por ser «una orden policial» y no una decisión artística.</p><p>El presidente del ICAIC negó la censura, pero acusó a Lechuga de haber roto con la Revolución y de usar los festivales internacionales para atacarla.</p></div>
+<div class="compartir" data-titulo="Vicenta B — Archivo vivo de cine censurado" data-url="https://censuradosfilmfestival.com/observatorio.html#vicenta-b">
+<span class="pequeno">Compartir:</span>
+<a href="https://wa.me/?text=Vicenta%20B%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23vicenta-b" rel="noopener" target="_blank">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23vicenta-b" rel="noopener" target="_blank">Facebook</a>
+<a href="https://twitter.com/intent/tweet?text=Vicenta%20B%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23vicenta-b" rel="noopener" target="_blank">X</a>
+<button class="copiar" type="button">Copiar enlace</button>
+</div>
+          </div>
+        </li>
+        <li class="ficha-archivo" id="beijing-spring" data-anio="2021" data-pais="Estados Unidos" data-texto="beijing spring andy cohen y galen ross · estados unidos · 2021 · documental, 100 min beijing spring andy cohen y galen ross · estados unidos · 2021 · documental, 100 min 7.ª edición en 1978, el grupo de artistas las estrellas —con un joven ai weiwei— desafió el arte de propaganda en el muro de la democracia de pekín, hasta que el régimen de deng xiaoping lo cerró. el caso aquella historia se censuró entonces y sigue censurada hoy en china. el cineasta chi xiaoning lo grabó todo en 16 mm desde lo alto del muro. cuando la policía lo detuvo y le exigió velar la película, solo entregó los rollos que no había usado. escondió los 47 minutos rescatados en casa de un confidente y, tras su muerte prematura, el material pasó de mano en mano durante cuarenta años, hasta que el director andy cohen lo encontró. beijing spring lo muestra por primera vez: la policía retirando por la fuerza la obra de las estrellas o la marcha del día nacional, la primera protesta desde la llegada del partido comunista al poder. ver el tráiler compartir: whatsapp facebook x copiar enlace">
+          <button type="button" class="abrir-caso" aria-haspopup="dialog">
+            <figure aria-hidden="true" class="pel-foto sin-foto" style="--franja:var(--agua)"><span>Beijing Spring</span></figure>
+            <span class="fa-titulo">Beijing Spring</span>
+            <span class="fa-ficha">Andy Cohen y Galen Ross · Estados Unidos · 2021 · Documental, 100 min</span>
+            <span class="fa-ed">7.ª edición</span>
+          </button>
+          <div class="caso" hidden>
+            <h3>Beijing Spring</h3><p class="ficha">Andy Cohen y Galen Ross · Estados Unidos · 2021 · Documental, 100 min</p><a class="ed" href="trayectoria.html#e7">7.ª edición</a>
+            <p>En 1978, el grupo de artistas Las Estrellas —con un joven Ai Weiwei— desafió el arte de propaganda en el Muro de la Democracia de Pekín, hasta que el régimen de Deng Xiaoping lo cerró.</p>
+<div class="historia"><p class="historia-titulo">El caso</p><p>Aquella historia se censuró entonces y sigue censurada hoy en China. El cineasta Chi Xiaoning lo grabó todo en 16 mm desde lo alto del Muro. Cuando la policía lo detuvo y le exigió velar la película, solo entregó los rollos que no había usado.</p><p>Escondió los 47 minutos rescatados en casa de un confidente y, tras su muerte prematura, el material pasó de mano en mano durante cuarenta años, hasta que el director Andy Cohen lo encontró. Beijing Spring lo muestra por primera vez: la policía retirando por la fuerza la obra de Las Estrellas o la marcha del Día Nacional, la primera protesta desde la llegada del Partido Comunista al poder.</p></div>
+<p class="trailer"><a href="https://www.youtube.com/watch?v=WfRCHgk2YR8" rel="noopener" target="_blank">Ver el tráiler</a></p>
+<div class="compartir" data-titulo="Beijing Spring — Archivo vivo de cine censurado" data-url="https://censuradosfilmfestival.com/observatorio.html#beijing-spring">
+<span class="pequeno">Compartir:</span>
+<a href="https://wa.me/?text=Beijing%20Spring%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23beijing-spring" rel="noopener" target="_blank">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23beijing-spring" rel="noopener" target="_blank">Facebook</a>
+<a href="https://twitter.com/intent/tweet?text=Beijing%20Spring%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23beijing-spring" rel="noopener" target="_blank">X</a>
+<button class="copiar" type="button">Copiar enlace</button>
+</div>
+          </div>
+        </li>
+        <li class="ficha-archivo" id="el-muro-sahara" data-anio="2021" data-pais="Italia" data-texto="el muro. la herida del sáhara gilberto mastromatteo y fiorella bendoni · italia · 2020 · documental, 20 min el muro. la herida del sáhara gilberto mastromatteo y fiorella bendoni · italia · 2020 · documental, 20 min 7.ª edición ahmed, fatimetu, mohamed y kadija viven a la sombra del muro que divide el sáhara occidental, el último conflicto anticolonial de áfrica, olvidado por el mundo. el caso no puede proyectarse en marruecos: hablar del muro puede costar la incautación del material, la detención y la cárcel a quien organice o asista a la proyección. las actividades de la productora, la asociación italiana ban slout larbi, son vigiladas desde hace años por la embajada marroquí. mastromatteo, periodista, entró en 2010 de forma clandestina, escondido en el fondo de un jeep, hasta el campamento de protesta de gdeim izik. en 2013 lo retuvieron en el aeropuerto de el aaiún, lo interrogaron y lo expulsaron escoltado por la policía. para proteger a sus fuentes reconoce haberse autocensurado muchas veces: algunos de los activistas que entrevistó siguen en prisión. ver el tráiler compartir: whatsapp facebook x copiar enlace">
+          <button type="button" class="abrir-caso" aria-haspopup="dialog">
+            <figure aria-hidden="true" class="pel-foto sin-foto" style="--franja:var(--rojo)"><span>El muro. La herida del Sáhara</span></figure>
+            <span class="fa-titulo">El muro. La herida del Sáhara</span>
+            <span class="fa-ficha">Gilberto Mastromatteo y Fiorella Bendoni · Italia · 2020 · Documental, 20 min</span>
+            <span class="fa-ed">7.ª edición</span>
+          </button>
+          <div class="caso" hidden>
+            <h3>El muro. La herida del Sáhara</h3><p class="ficha">Gilberto Mastromatteo y Fiorella Bendoni · Italia · 2020 · Documental, 20 min</p><a class="ed" href="trayectoria.html#e7">7.ª edición</a>
+            <p>Ahmed, Fatimetu, Mohamed y Kadija viven a la sombra del muro que divide el Sáhara Occidental, el último conflicto anticolonial de África, olvidado por el mundo.</p>
+<div class="historia"><p class="historia-titulo">El caso</p><p>No puede proyectarse en Marruecos: hablar del muro puede costar la incautación del material, la detención y la cárcel a quien organice o asista a la proyección. Las actividades de la productora, la asociación italiana Ban Slout Larbi, son vigiladas desde hace años por la embajada marroquí.</p><p>Mastromatteo, periodista, entró en 2010 de forma clandestina, escondido en el fondo de un jeep, hasta el campamento de protesta de Gdeim Izik. En 2013 lo retuvieron en el aeropuerto de El Aaiún, lo interrogaron y lo expulsaron escoltado por la policía. Para proteger a sus fuentes reconoce haberse autocensurado muchas veces: algunos de los activistas que entrevistó siguen en prisión.</p></div>
+<p class="trailer"><a href="https://youtu.be/hWk1S_ziE2s" rel="noopener" target="_blank">Ver el tráiler</a></p>
+<div class="compartir" data-titulo="El muro. La herida del Sáhara — Archivo vivo de cine censurado" data-url="https://censuradosfilmfestival.com/observatorio.html#el-muro-sahara">
+<span class="pequeno">Compartir:</span>
+<a href="https://wa.me/?text=El%20muro.%20La%20herida%20del%20S%C3%A1hara%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23el-muro-sahara" rel="noopener" target="_blank">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23el-muro-sahara" rel="noopener" target="_blank">Facebook</a>
+<a href="https://twitter.com/intent/tweet?text=El%20muro.%20La%20herida%20del%20S%C3%A1hara%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23el-muro-sahara" rel="noopener" target="_blank">X</a>
+<button class="copiar" type="button">Copiar enlace</button>
+</div>
+          </div>
+        </li>
+        <li class="ficha-archivo" id="entre-el-hierro-y-el-mar" data-anio="2021" data-pais="Perú" data-texto="entre el hierro y el mar maga zevallos · perú · 2020 · documental, 64 min entre el hierro y el mar maga zevallos · perú · 2020 · documental, 64 min 7.ª edición marcona (ica), el único productor de hierro del perú, con casi todo su territorio concesionado a la minería: disputas por la tierra, contaminación y derechos laborales. el caso zevallos rodó sola durante diez meses, con un perfil bajo. cuando quiso grabar la fachada de la mina, la seguridad de shougang la filmó e intentó quitarle la cámara. tras el estreno en lima, en febrero de 2020, llegaron las cartas notariales, una campaña de desinformación en redes y en panfletos, y llamadas para impedir las proyecciones. en ica, un grupo llegado desde marcona intentó boicotear la función, y periodistas que no habían visto la película difundieron que había recibido millón y medio de dólares de ong extranjeras; en realidad se financió con fondos propios. la directora tuvo que pedir garantías para su seguridad y la de su equipo. ver el tráiler compartir: whatsapp facebook x copiar enlace">
+          <button type="button" class="abrir-caso" aria-haspopup="dialog">
+            <figure aria-hidden="true" class="pel-foto sin-foto" style="--franja:var(--amarillo)"><span>Entre el hierro y el mar</span></figure>
+            <span class="fa-titulo">Entre el hierro y el mar</span>
+            <span class="fa-ficha">Maga Zevallos · Perú · 2020 · Documental, 64 min</span>
+            <span class="fa-ed">7.ª edición</span>
+          </button>
+          <div class="caso" hidden>
+            <h3>Entre el hierro y el mar</h3><p class="ficha">Maga Zevallos · Perú · 2020 · Documental, 64 min</p><a class="ed" href="trayectoria.html#e7">7.ª edición</a>
+            <p>Marcona (Ica), el único productor de hierro del Perú, con casi todo su territorio concesionado a la minería: disputas por la tierra, contaminación y derechos laborales.</p>
+<div class="historia"><p class="historia-titulo">El caso</p><p>Zevallos rodó sola durante diez meses, con un perfil bajo. Cuando quiso grabar la fachada de la mina, la seguridad de Shougang la filmó e intentó quitarle la cámara.</p><p>Tras el estreno en Lima, en febrero de 2020, llegaron las cartas notariales, una campaña de desinformación en redes y en panfletos, y llamadas para impedir las proyecciones. En Ica, un grupo llegado desde Marcona intentó boicotear la función, y periodistas que no habían visto la película difundieron que había recibido millón y medio de dólares de ONG extranjeras; en realidad se financió con fondos propios. La directora tuvo que pedir garantías para su seguridad y la de su equipo.</p></div>
+<p class="trailer"><a href="https://www.youtube.com/watch?v=AtUsNOUpS8o" rel="noopener" target="_blank">Ver el tráiler</a></p>
+<div class="compartir" data-titulo="Entre el hierro y el mar — Archivo vivo de cine censurado" data-url="https://censuradosfilmfestival.com/observatorio.html#entre-el-hierro-y-el-mar">
+<span class="pequeno">Compartir:</span>
+<a href="https://wa.me/?text=Entre%20el%20hierro%20y%20el%20mar%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23entre-el-hierro-y-el-mar" rel="noopener" target="_blank">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23entre-el-hierro-y-el-mar" rel="noopener" target="_blank">Facebook</a>
+<a href="https://twitter.com/intent/tweet?text=Entre%20el%20hierro%20y%20el%20mar%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23entre-el-hierro-y-el-mar" rel="noopener" target="_blank">X</a>
+<button class="copiar" type="button">Copiar enlace</button>
+</div>
+          </div>
+        </li>
+        <li class="ficha-archivo" id="fuera-porta" data-anio="2021" data-pais="Argentina" data-texto="fuera porta: un grito de lucha florencia reynoso · argentina · 2018 · documental, 35 min fuera porta: un grito de lucha florencia reynoso · argentina · 2018 · documental, 35 min 7.ª edición las vecinas y vecinos de san antonio, en córdoba, frente a la planta de bioetanol de porta hermanos, que funciona junto a sus casas desde 2012 sin estudio de impacto ambiental. el caso el equipo fue seguido y vigilado por la empresa durante el rodaje. tras un estreno con 550 personas en 2019, la segunda proyección se canceló por «presiones de la municipalidad de córdoba». en noviembre, el museo de bellas artes evita – palacio ferreyra la retiró de su programación un día antes, a pedido de la secretaría de cultura provincial y con «amenazas de despidos» de por medio. se proyectó igualmente en la calle, frente al museo, bajo el lema «silenciadxs nunca más». la directora del museo fue destituida. ver el tráiler compartir: whatsapp facebook x copiar enlace">
+          <button type="button" class="abrir-caso" aria-haspopup="dialog">
+            <figure aria-hidden="true" class="pel-foto sin-foto" style="--franja:var(--agua)"><span>Fuera Porta: un grito de lucha</span></figure>
+            <span class="fa-titulo">Fuera Porta: un grito de lucha</span>
+            <span class="fa-ficha">Florencia Reynoso · Argentina · 2018 · Documental, 35 min</span>
+            <span class="fa-ed">7.ª edición</span>
+          </button>
+          <div class="caso" hidden>
+            <h3>Fuera Porta: un grito de lucha</h3><p class="ficha">Florencia Reynoso · Argentina · 2018 · Documental, 35 min</p><a class="ed" href="trayectoria.html#e7">7.ª edición</a>
+            <p>Las vecinas y vecinos de San Antonio, en Córdoba, frente a la planta de bioetanol de Porta Hermanos, que funciona junto a sus casas desde 2012 sin estudio de impacto ambiental.</p>
+<div class="historia"><p class="historia-titulo">El caso</p><p>El equipo fue seguido y vigilado por la empresa durante el rodaje. Tras un estreno con 550 personas en 2019, la segunda proyección se canceló por «presiones de la Municipalidad de Córdoba».</p><p>En noviembre, el Museo de Bellas Artes Evita – Palacio Ferreyra la retiró de su programación un día antes, a pedido de la Secretaría de Cultura provincial y con «amenazas de despidos» de por medio. Se proyectó igualmente en la calle, frente al museo, bajo el lema «Silenciadxs nunca más». La directora del museo fue destituida.</p></div>
+<p class="trailer"><a href="https://vimeo.com/357431144" rel="noopener" target="_blank">Ver el tráiler</a></p>
+<div class="compartir" data-titulo="Fuera Porta: un grito de lucha — Archivo vivo de cine censurado" data-url="https://censuradosfilmfestival.com/observatorio.html#fuera-porta">
+<span class="pequeno">Compartir:</span>
+<a href="https://wa.me/?text=Fuera%20Porta%3A%20un%20grito%20de%20lucha%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23fuera-porta" rel="noopener" target="_blank">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23fuera-porta" rel="noopener" target="_blank">Facebook</a>
+<a href="https://twitter.com/intent/tweet?text=Fuera%20Porta%3A%20un%20grito%20de%20lucha%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23fuera-porta" rel="noopener" target="_blank">X</a>
+<button class="copiar" type="button">Copiar enlace</button>
+</div>
+          </div>
+        </li>
+        <li class="ficha-archivo" id="jose" data-anio="2021" data-pais="Guatemala" data-texto="josé li cheng · guatemala · 2018 · ficción, 85 min josé li cheng · guatemala · 2018 · ficción, 85 min 7.ª edición josé, de 19 años, vende comida en las calles de guatemala y vive con su madre. una aplicación de citas lo lleva hasta luis, y a un amor que no imaginaba. el caso ganó el queer lion en venecia, pero los gobiernos de singapur y macao prohibieron su exhibición por su contenido homosexual, y los festivales que la habían seleccionado tuvieron que retirarle la invitación. aunque se ha visto en más de 50 países, en américa latina apenas ha circulado: una sola proyección en guatemala y ninguna en chile. en 2020, estados unidos negó dos veces el visado a su protagonista, enrique salanic, para promocionarla, pese al respaldo de la distribuidora y de un congresista. ver el tráiler compartir: whatsapp facebook x copiar enlace">
+          <button type="button" class="abrir-caso" aria-haspopup="dialog">
+            <figure aria-hidden="true" class="pel-foto sin-foto" style="--franja:var(--rojo)"><span>José</span></figure>
+            <span class="fa-titulo">José</span>
+            <span class="fa-ficha">Li Cheng · Guatemala · 2018 · Ficción, 85 min</span>
+            <span class="fa-ed">7.ª edición</span>
+          </button>
+          <div class="caso" hidden>
+            <h3>José</h3><p class="ficha">Li Cheng · Guatemala · 2018 · Ficción, 85 min</p><a class="ed" href="trayectoria.html#e7">7.ª edición</a>
+            <p>José, de 19 años, vende comida en las calles de Guatemala y vive con su madre. Una aplicación de citas lo lleva hasta Luis, y a un amor que no imaginaba.</p>
+<div class="historia"><p class="historia-titulo">El caso</p><p>Ganó el Queer Lion en Venecia, pero los gobiernos de Singapur y Macao prohibieron su exhibición por su contenido homosexual, y los festivales que la habían seleccionado tuvieron que retirarle la invitación.</p><p>Aunque se ha visto en más de 50 países, en América Latina apenas ha circulado: una sola proyección en Guatemala y ninguna en Chile. En 2020, Estados Unidos negó dos veces el visado a su protagonista, Enrique Salanic, para promocionarla, pese al respaldo de la distribuidora y de un congresista.</p></div>
+<p class="trailer"><a href="https://www.youtube.com/watch?v=BosKW_Zspgs" rel="noopener" target="_blank">Ver el tráiler</a></p>
+<div class="compartir" data-titulo="José — Archivo vivo de cine censurado" data-url="https://censuradosfilmfestival.com/observatorio.html#jose">
+<span class="pequeno">Compartir:</span>
+<a href="https://wa.me/?text=Jos%C3%A9%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23jose" rel="noopener" target="_blank">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23jose" rel="noopener" target="_blank">Facebook</a>
+<a href="https://twitter.com/intent/tweet?text=Jos%C3%A9%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23jose" rel="noopener" target="_blank">X</a>
+<button class="copiar" type="button">Copiar enlace</button>
+</div>
+          </div>
+        </li>
+        <li class="ficha-archivo" id="lo-que-nos-queda" data-anio="2021" data-pais="México" data-texto="lo que nos queda yudiel landa · méxico · 2020 · documental, 19 min lo que nos queda yudiel landa · méxico · 2020 · documental, 19 min 7.ª edición en 2014, en nueva italia (michoacán), las autodefensas incendiaron las propiedades ligadas al narcotráfico, también el único cine del pueblo. «¿ahora qué vamos a hacer si no tenemos cine?» el caso en 2019 iba a estrenarse en la plaza de armas de nueva italia, en el primer gran evento cultural del pueblo. cuando se anunció en redes, el organizador recibió una llamada que amenazaba al equipo y a sus familias si no cancelaban la proyección. el evento se suspendió. desde entonces solo ha habido dos pases privados, de menos de veinte personas, uno de ellos en la cochera del director. los colectivos culturales del pueblo han desaparecido por la infiltración del narcotráfico en el gobierno local. ver el tráiler compartir: whatsapp facebook x copiar enlace">
+          <button type="button" class="abrir-caso" aria-haspopup="dialog">
+            <figure aria-hidden="true" class="pel-foto sin-foto" style="--franja:var(--amarillo)"><span>Lo que nos queda</span></figure>
+            <span class="fa-titulo">Lo que nos queda</span>
+            <span class="fa-ficha">Yudiel Landa · México · 2020 · Documental, 19 min</span>
+            <span class="fa-ed">7.ª edición</span>
+          </button>
+          <div class="caso" hidden>
+            <h3>Lo que nos queda</h3><p class="ficha">Yudiel Landa · México · 2020 · Documental, 19 min</p><a class="ed" href="trayectoria.html#e7">7.ª edición</a>
+            <p>En 2014, en Nueva Italia (Michoacán), las autodefensas incendiaron las propiedades ligadas al narcotráfico, también el único cine del pueblo. «¿Ahora qué vamos a hacer si no tenemos cine?»</p>
+<div class="historia"><p class="historia-titulo">El caso</p><p>En 2019 iba a estrenarse en la plaza de Armas de Nueva Italia, en el primer gran evento cultural del pueblo. Cuando se anunció en redes, el organizador recibió una llamada que amenazaba al equipo y a sus familias si no cancelaban la proyección. El evento se suspendió.</p><p>Desde entonces solo ha habido dos pases privados, de menos de veinte personas, uno de ellos en la cochera del director. Los colectivos culturales del pueblo han desaparecido por la infiltración del narcotráfico en el gobierno local.</p></div>
+<p class="trailer"><a href="https://www.youtube.com/watch?v=mBV6TTJAfCo" rel="noopener" target="_blank">Ver el tráiler</a></p>
+<div class="compartir" data-titulo="Lo que nos queda — Archivo vivo de cine censurado" data-url="https://censuradosfilmfestival.com/observatorio.html#lo-que-nos-queda">
+<span class="pequeno">Compartir:</span>
+<a href="https://wa.me/?text=Lo%20que%20nos%20queda%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23lo-que-nos-queda" rel="noopener" target="_blank">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23lo-que-nos-queda" rel="noopener" target="_blank">Facebook</a>
+<a href="https://twitter.com/intent/tweet?text=Lo%20que%20nos%20queda%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23lo-que-nos-queda" rel="noopener" target="_blank">X</a>
+<button class="copiar" type="button">Copiar enlace</button>
+</div>
+          </div>
+        </li>
+        <li class="ficha-archivo" id="nosotros-no-olvidamos" data-anio="2021" data-pais="España" data-texto="nosotros no olvidamos damià puig · españa · 2020 · documental, 85 min nosotros no olvidamos damià puig · españa · 2020 · documental, 85 min 7.ª edición en 1992, pedro álvarez, de 20 años, fue asesinado en l’hospitalet de llobregat tras una discusión de tráfico. las pruebas señalan a un policía nacional que nunca fue juzgado. el caso el parlamento de cataluña aprobó una resolución que pedía reabrir el caso y recomendaba a tv3 emitir el documental. la televisión pública nunca lo hizo: alegó «aspectos técnicos insalvables», aunque había emitido otros trabajos con las mismas características. fuentes internas confirmaron al director que tocar a los mossos d’esquadra, protagonistas de uno de los casos de la película, era prácticamente imposible en la televisión catalana. el parlamento no volvió a insistir. ver el tráiler compartir: whatsapp facebook x copiar enlace">
+          <button type="button" class="abrir-caso" aria-haspopup="dialog">
+            <figure aria-hidden="true" class="pel-foto sin-foto" style="--franja:var(--agua)"><span>Nosotros no olvidamos</span></figure>
+            <span class="fa-titulo">Nosotros no olvidamos</span>
+            <span class="fa-ficha">Damià Puig · España · 2020 · Documental, 85 min</span>
+            <span class="fa-ed">7.ª edición</span>
+          </button>
+          <div class="caso" hidden>
+            <h3>Nosotros no olvidamos</h3><p class="ficha">Damià Puig · España · 2020 · Documental, 85 min</p><a class="ed" href="trayectoria.html#e7">7.ª edición</a>
+            <p>En 1992, Pedro Álvarez, de 20 años, fue asesinado en L’Hospitalet de Llobregat tras una discusión de tráfico. Las pruebas señalan a un policía nacional que nunca fue juzgado.</p>
+<div class="historia"><p class="historia-titulo">El caso</p><p>El Parlamento de Cataluña aprobó una resolución que pedía reabrir el caso y recomendaba a TV3 emitir el documental. La televisión pública nunca lo hizo: alegó «aspectos técnicos insalvables», aunque había emitido otros trabajos con las mismas características.</p><p>Fuentes internas confirmaron al director que tocar a los Mossos d’Esquadra, protagonistas de uno de los casos de la película, era prácticamente imposible en la televisión catalana. El Parlamento no volvió a insistir.</p></div>
+<p class="trailer"><a href="https://www.youtube.com/watch?v=lkR7zGPSeWQ" rel="noopener" target="_blank">Ver el tráiler</a></p>
+<div class="compartir" data-titulo="Nosotros no olvidamos — Archivo vivo de cine censurado" data-url="https://censuradosfilmfestival.com/observatorio.html#nosotros-no-olvidamos">
+<span class="pequeno">Compartir:</span>
+<a href="https://wa.me/?text=Nosotros%20no%20olvidamos%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23nosotros-no-olvidamos" rel="noopener" target="_blank">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23nosotros-no-olvidamos" rel="noopener" target="_blank">Facebook</a>
+<a href="https://twitter.com/intent/tweet?text=Nosotros%20no%20olvidamos%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23nosotros-no-olvidamos" rel="noopener" target="_blank">X</a>
+<button class="copiar" type="button">Copiar enlace</button>
+</div>
+          </div>
+        </li>
+        <li class="ficha-archivo" id="suenos-al-pairo" data-anio="2021" data-pais="Cuba" data-texto="sueños al pairo josé luis aparicio y fernando fraguela · cuba · 2020 · documental, 32 min sueños al pairo josé luis aparicio y fernando fraguela · cuba · 2020 · documental, 32 min 7.ª edición mike porcel, una de las voces más originales de la canción cubana desde finales de los años sesenta. el caso su decisión de emigrar durante el éxodo del mariel, en 1980, le costó ser condenado al silencio y al ostracismo en su país, una sanción que se mantiene hasta hoy. compartir: whatsapp facebook x copiar enlace">
+          <button type="button" class="abrir-caso" aria-haspopup="dialog">
+            <figure aria-hidden="true" class="pel-foto sin-foto" style="--franja:var(--rojo)"><span>Sueños al pairo</span></figure>
+            <span class="fa-titulo">Sueños al pairo</span>
+            <span class="fa-ficha">José Luis Aparicio y Fernando Fraguela · Cuba · 2020 · Documental, 32 min</span>
+            <span class="fa-ed">7.ª edición</span>
+          </button>
+          <div class="caso" hidden>
+            <h3>Sueños al pairo</h3><p class="ficha">José Luis Aparicio y Fernando Fraguela · Cuba · 2020 · Documental, 32 min</p><a class="ed" href="trayectoria.html#e7">7.ª edición</a>
+            <p>Mike Porcel, una de las voces más originales de la canción cubana desde finales de los años sesenta.</p>
+<div class="historia"><p class="historia-titulo">El caso</p><p>Su decisión de emigrar durante el éxodo del Mariel, en 1980, le costó ser condenado al silencio y al ostracismo en su país, una sanción que se mantiene hasta hoy.</p></div>
+<div class="compartir" data-titulo="Sueños al pairo — Archivo vivo de cine censurado" data-url="https://censuradosfilmfestival.com/observatorio.html#suenos-al-pairo">
+<span class="pequeno">Compartir:</span>
+<a href="https://wa.me/?text=Sue%C3%B1os%20al%20pairo%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23suenos-al-pairo" rel="noopener" target="_blank">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23suenos-al-pairo" rel="noopener" target="_blank">Facebook</a>
+<a href="https://twitter.com/intent/tweet?text=Sue%C3%B1os%20al%20pairo%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23suenos-al-pairo" rel="noopener" target="_blank">X</a>
+<button class="copiar" type="button">Copiar enlace</button>
+</div>
+          </div>
+        </li>
+        <li class="ficha-archivo" id="anotes-ark" data-anio="2019" data-pais="Canadá" data-texto="anote’s ark matthieu rytz · canadá · 2018 · documental, 77 min anote’s ark matthieu rytz · canadá · 2018 · documental, 77 min 6.ª edición kiribati, un atolón del pacífico que el mar podría tragarse antes de que acabe el siglo, y su expresidente anote tong buscando una salida por el mundo. el caso el nuevo gobierno de kiribati, de política opuesta a la de tong, canceló varias proyecciones. en la navidad de 2017, cuando rytz volvió para mostrar la película a la población, tres policías irrumpieron en la casa donde se alojaba, se quedaron con su computadora y le ordenaron salir del país en el siguiente vuelo. compartir: whatsapp facebook x copiar enlace">
+          <button type="button" class="abrir-caso" aria-haspopup="dialog">
+            <figure aria-hidden="true" class="pel-foto sin-foto" style="--franja:var(--amarillo)"><span>Anote’s Ark</span></figure>
+            <span class="fa-titulo">Anote’s Ark</span>
+            <span class="fa-ficha">Matthieu Rytz · Canadá · 2018 · Documental, 77 min</span>
+            <span class="fa-ed">6.ª edición</span>
+          </button>
+          <div class="caso" hidden>
+            <h3>Anote’s Ark</h3><p class="ficha">Matthieu Rytz · Canadá · 2018 · Documental, 77 min</p><a class="ed" href="trayectoria.html#e6">6.ª edición</a>
+            <p>Kiribati, un atolón del Pacífico que el mar podría tragarse antes de que acabe el siglo, y su expresidente Anote Tong buscando una salida por el mundo.</p>
+<div class="historia"><p class="historia-titulo">El caso</p><p>El nuevo gobierno de Kiribati, de política opuesta a la de Tong, canceló varias proyecciones. En la Navidad de 2017, cuando Rytz volvió para mostrar la película a la población, tres policías irrumpieron en la casa donde se alojaba, se quedaron con su computadora y le ordenaron salir del país en el siguiente vuelo.</p></div>
+<div class="compartir" data-titulo="Anote’s Ark — Archivo vivo de cine censurado" data-url="https://censuradosfilmfestival.com/observatorio.html#anotes-ark">
+<span class="pequeno">Compartir:</span>
+<a href="https://wa.me/?text=Anote%E2%80%99s%20Ark%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23anotes-ark" rel="noopener" target="_blank">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23anotes-ark" rel="noopener" target="_blank">Facebook</a>
+<a href="https://twitter.com/intent/tweet?text=Anote%E2%80%99s%20Ark%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23anotes-ark" rel="noopener" target="_blank">X</a>
+<button class="copiar" type="button">Copiar enlace</button>
+</div>
+          </div>
+        </li>
+        <li class="ficha-archivo" id="rafiki" data-anio="2019" data-pais="Kenia" data-texto="rafiki wanuri kahiu · kenia · 2018 · ficción, 83 min rafiki wanuri kahiu · kenia · 2018 · ficción, 83 min 6.ª edición dos jóvenes se enamoran en nairobi, en un país donde las relaciones entre personas del mismo sexo se castigan con hasta 14 años de cárcel. el caso diez días después de que el ministerio de cultura celebrara su selección en cannes, la junta de clasificación de kenia la prohibió por «promover el lesbianismo», amparándose en una ley de la época colonial. según kahiu, el motivo real fue que se negó a cambiar el final. tras su demanda, una jueza permitió exhibirla una semana, solo para adultos, para que pudiera optar al óscar; las salas se llenaron. la directora recibió amenazas de arresto y pidió que nadie la viera pirateada: «eso haría peligrar mi libertad y mi vida». compartir: whatsapp facebook x copiar enlace">
+          <button type="button" class="abrir-caso" aria-haspopup="dialog">
+            <figure aria-hidden="true" class="pel-foto sin-foto" style="--franja:var(--agua)"><span>Rafiki</span></figure>
+            <span class="fa-titulo">Rafiki</span>
+            <span class="fa-ficha">Wanuri Kahiu · Kenia · 2018 · Ficción, 83 min</span>
+            <span class="fa-ed">6.ª edición</span>
+          </button>
+          <div class="caso" hidden>
+            <h3>Rafiki</h3><p class="ficha">Wanuri Kahiu · Kenia · 2018 · Ficción, 83 min</p><a class="ed" href="trayectoria.html#e6">6.ª edición</a>
+            <p>Dos jóvenes se enamoran en Nairobi, en un país donde las relaciones entre personas del mismo sexo se castigan con hasta 14 años de cárcel.</p>
+<div class="historia"><p class="historia-titulo">El caso</p><p>Diez días después de que el Ministerio de Cultura celebrara su selección en Cannes, la Junta de Clasificación de Kenia la prohibió por «promover el lesbianismo», amparándose en una ley de la época colonial. Según Kahiu, el motivo real fue que se negó a cambiar el final.</p><p>Tras su demanda, una jueza permitió exhibirla una semana, solo para adultos, para que pudiera optar al Óscar; las salas se llenaron. La directora recibió amenazas de arresto y pidió que nadie la viera pirateada: «eso haría peligrar mi libertad y mi vida».</p></div>
+<div class="compartir" data-titulo="Rafiki — Archivo vivo de cine censurado" data-url="https://censuradosfilmfestival.com/observatorio.html#rafiki">
+<span class="pequeno">Compartir:</span>
+<a href="https://wa.me/?text=Rafiki%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23rafiki" rel="noopener" target="_blank">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23rafiki" rel="noopener" target="_blank">Facebook</a>
+<a href="https://twitter.com/intent/tweet?text=Rafiki%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23rafiki" rel="noopener" target="_blank">X</a>
+<button class="copiar" type="button">Copiar enlace</button>
+</div>
+          </div>
+        </li>
+        <li class="ficha-archivo" id="of-fathers-and-sons" data-anio="2019" data-pais="Alemania" data-texto="of fathers and sons talal derki · alemania · 2017 · documental, 98 min of fathers and sons talal derki · alemania · 2017 · documental, 98 min 6.ª edición el cineasta sirio talal derki vuelve a su país y convive durante dos años con una familia yihadista. el caso nominada al óscar al mejor documental en 2019, estados unidos negó al principio el visado a su director, sirio exiliado en berlín, para asistir a la ceremonia. se lo aprobaron a pocos días de la gala, pero no a su esposa, también con pasaporte sirio. compartir: whatsapp facebook x copiar enlace">
+          <button type="button" class="abrir-caso" aria-haspopup="dialog">
+            <figure aria-hidden="true" class="pel-foto sin-foto" style="--franja:var(--rojo)"><span>Of Fathers and Sons</span></figure>
+            <span class="fa-titulo">Of Fathers and Sons</span>
+            <span class="fa-ficha">Talal Derki · Alemania · 2017 · Documental, 98 min</span>
+            <span class="fa-ed">6.ª edición</span>
+          </button>
+          <div class="caso" hidden>
+            <h3>Of Fathers and Sons</h3><p class="ficha">Talal Derki · Alemania · 2017 · Documental, 98 min</p><a class="ed" href="trayectoria.html#e6">6.ª edición</a>
+            <p>El cineasta sirio Talal Derki vuelve a su país y convive durante dos años con una familia yihadista.</p>
+<div class="historia"><p class="historia-titulo">El caso</p><p>Nominada al Óscar al mejor documental en 2019, Estados Unidos negó al principio el visado a su director, sirio exiliado en Berlín, para asistir a la ceremonia. Se lo aprobaron a pocos días de la gala, pero no a su esposa, también con pasaporte sirio.</p></div>
+<div class="compartir" data-titulo="Of Fathers and Sons — Archivo vivo de cine censurado" data-url="https://censuradosfilmfestival.com/observatorio.html#of-fathers-and-sons">
+<span class="pequeno">Compartir:</span>
+<a href="https://wa.me/?text=Of%20Fathers%20and%20Sons%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23of-fathers-and-sons" rel="noopener" target="_blank">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23of-fathers-and-sons" rel="noopener" target="_blank">Facebook</a>
+<a href="https://twitter.com/intent/tweet?text=Of%20Fathers%20and%20Sons%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23of-fathers-and-sons" rel="noopener" target="_blank">X</a>
+<button class="copiar" type="button">Copiar enlace</button>
+</div>
+          </div>
+        </li>
+        <li class="ficha-archivo" id="the-crying-of-tambur" data-anio="2019" data-pais="Tayikistán" data-texto="the crying of tambur anisa sabiri · tayikistán · 2018 · ficción, 25 min the crying of tambur anisa sabiri · tayikistán · 2018 · ficción, 25 min 6.ª edición la historia familiar de un reportero en la guerra civil de tayikistán, que en los años noventa dejó decenas de miles de muertos y sigue siendo un tabú en el país. el caso la agencia de cine del gobierno rechazó tres veces el permiso de rodaje, y la directora tuvo que quitar del guion las escenas de batalla. terminada la película, la citaron en comisaría y le exigieron entregar el disco duro con todo el material original. compartir: whatsapp facebook x copiar enlace">
+          <button type="button" class="abrir-caso" aria-haspopup="dialog">
+            <figure aria-hidden="true" class="pel-foto sin-foto" style="--franja:var(--amarillo)"><span>The Crying of Tambur</span></figure>
+            <span class="fa-titulo">The Crying of Tambur</span>
+            <span class="fa-ficha">Anisa Sabiri · Tayikistán · 2018 · Ficción, 25 min</span>
+            <span class="fa-ed">6.ª edición</span>
+          </button>
+          <div class="caso" hidden>
+            <h3>The Crying of Tambur</h3><p class="ficha">Anisa Sabiri · Tayikistán · 2018 · Ficción, 25 min</p><a class="ed" href="trayectoria.html#e6">6.ª edición</a>
+            <p>La historia familiar de un reportero en la guerra civil de Tayikistán, que en los años noventa dejó decenas de miles de muertos y sigue siendo un tabú en el país.</p>
+<div class="historia"><p class="historia-titulo">El caso</p><p>La agencia de cine del gobierno rechazó tres veces el permiso de rodaje, y la directora tuvo que quitar del guion las escenas de batalla. Terminada la película, la citaron en comisaría y le exigieron entregar el disco duro con todo el material original.</p></div>
+<div class="compartir" data-titulo="The Crying of Tambur — Archivo vivo de cine censurado" data-url="https://censuradosfilmfestival.com/observatorio.html#the-crying-of-tambur">
+<span class="pequeno">Compartir:</span>
+<a href="https://wa.me/?text=The%20Crying%20of%20Tambur%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23the-crying-of-tambur" rel="noopener" target="_blank">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23the-crying-of-tambur" rel="noopener" target="_blank">Facebook</a>
+<a href="https://twitter.com/intent/tweet?text=The%20Crying%20of%20Tambur%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23the-crying-of-tambur" rel="noopener" target="_blank">X</a>
+<button class="copiar" type="button">Copiar enlace</button>
+</div>
+          </div>
+        </li>
+        <li class="ficha-archivo" id="gaza" data-anio="2019" data-pais="España" data-texto="gaza carles bover y julio pérez del campo · españa · 2017 · documental, 18 min gaza carles bover y julio pérez del campo · españa · 2017 · documental, 18 min 6.ª edición la vida en la franja de gaza tras la ofensiva israelí de 2014, que dejó más de 2.200 muertos. el caso para poder entrar en la franja, pérez del campo, profesor de biología, pidió permiso para un estudio sobre agricultura. ya terminada, la película sufrió intentos de censura en festivales y salas, y la propia academia de cine recibió amenazas antes de darle el goya al mejor cortometraje documental. el arzobispado de madrid prohibió su proyección en la parroquia de san carlos borromeo por la «presión» de la comunidad judía, según comunicó la propia parroquia. compartir: whatsapp facebook x copiar enlace">
+          <button type="button" class="abrir-caso" aria-haspopup="dialog">
+            <figure aria-hidden="true" class="pel-foto sin-foto" style="--franja:var(--agua)"><span>Gaza</span></figure>
+            <span class="fa-titulo">Gaza</span>
+            <span class="fa-ficha">Carles Bover y Julio Pérez del Campo · España · 2017 · Documental, 18 min</span>
+            <span class="fa-ed">6.ª edición</span>
+          </button>
+          <div class="caso" hidden>
+            <h3>Gaza</h3><p class="ficha">Carles Bover y Julio Pérez del Campo · España · 2017 · Documental, 18 min</p><a class="ed" href="trayectoria.html#e6">6.ª edición</a>
+            <p>La vida en la Franja de Gaza tras la ofensiva israelí de 2014, que dejó más de 2.200 muertos.</p>
+<div class="historia"><p class="historia-titulo">El caso</p><p>Para poder entrar en la Franja, Pérez del Campo, profesor de biología, pidió permiso para un estudio sobre agricultura. Ya terminada, la película sufrió intentos de censura en festivales y salas, y la propia Academia de Cine recibió amenazas antes de darle el Goya al mejor cortometraje documental.</p><p>El Arzobispado de Madrid prohibió su proyección en la parroquia de San Carlos Borromeo por la «presión» de la comunidad judía, según comunicó la propia parroquia.</p></div>
+<div class="compartir" data-titulo="Gaza — Archivo vivo de cine censurado" data-url="https://censuradosfilmfestival.com/observatorio.html#gaza">
+<span class="pequeno">Compartir:</span>
+<a href="https://wa.me/?text=Gaza%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23gaza" rel="noopener" target="_blank">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23gaza" rel="noopener" target="_blank">Facebook</a>
+<a href="https://twitter.com/intent/tweet?text=Gaza%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23gaza" rel="noopener" target="_blank">X</a>
+<button class="copiar" type="button">Copiar enlace</button>
+</div>
           </div>
         </li>
       </ul>
-      <h3 class="anio-archivo">2021</h3>
-      <ul class="peliculas">
-        <li class="pelicula" id="beijing-spring">
-          <figure class="pel-foto sin-foto" style="--franja:var(--agua)" aria-hidden="true"><span>Beijing Spring</span></figure>
-          <div class="pel-texto">
-          <h3>Beijing Spring</h3><p class="ficha">Andy Cohen y Galen Ross · Estados Unidos · 2021 · Documental, 100 min</p><a class="ed" href="trayectoria.html#e7">7.ª edición</a>
-          <p>En 1978, el grupo de artistas Las Estrellas —con un joven Ai Weiwei— desafió el arte de propaganda en el Muro de la Democracia de Pekín, hasta que el régimen de Deng Xiaoping lo cerró.</p>
-          <div class="historia"><p class="historia-titulo">El caso</p><p>Aquella historia se censuró entonces y sigue censurada hoy en China. El cineasta Chi Xiaoning lo grabó todo en 16 mm desde lo alto del Muro. Cuando la policía lo detuvo y le exigió velar la película, solo entregó los rollos que no había usado.</p><p>Escondió los 47 minutos rescatados en casa de un confidente y, tras su muerte prematura, el material pasó de mano en mano durante cuarenta años, hasta que el director Andy Cohen lo encontró. Beijing Spring lo muestra por primera vez: la policía retirando por la fuerza la obra de Las Estrellas o la marcha del Día Nacional, la primera protesta desde la llegada del Partido Comunista al poder.</p></div>
-          <p class="trailer"><a href="https://www.youtube.com/watch?v=WfRCHgk2YR8" target="_blank" rel="noopener">Ver el tráiler</a></p>
-          <div class="compartir" data-url="https://censuradosfilmfestival.com/observatorio.html#beijing-spring" data-titulo="Beijing Spring — Archivo vivo de cine censurado">
-            <span class="pequeno">Compartir:</span>
-            <a href="https://wa.me/?text=Beijing%20Spring%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23beijing-spring" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23beijing-spring" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?text=Beijing%20Spring%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23beijing-spring" target="_blank" rel="noopener">X</a>
-            <button type="button" class="copiar">Copiar enlace</button>
-          </div>
-          </div>
-        </li>
-        <li class="pelicula" id="el-muro-sahara">
-          <figure class="pel-foto sin-foto" style="--franja:var(--rojo)" aria-hidden="true"><span>El muro. La herida del Sáhara</span></figure>
-          <div class="pel-texto">
-          <h3>El muro. La herida del Sáhara</h3><p class="ficha">Gilberto Mastromatteo y Fiorella Bendoni · Italia · 2020 · Documental, 20 min</p><a class="ed" href="trayectoria.html#e7">7.ª edición</a>
-          <p>Ahmed, Fatimetu, Mohamed y Kadija viven a la sombra del muro que divide el Sáhara Occidental, el último conflicto anticolonial de África, olvidado por el mundo.</p>
-          <div class="historia"><p class="historia-titulo">El caso</p><p>No puede proyectarse en Marruecos: hablar del muro puede costar la incautación del material, la detención y la cárcel a quien organice o asista a la proyección. Las actividades de la productora, la asociación italiana Ban Slout Larbi, son vigiladas desde hace años por la embajada marroquí.</p><p>Mastromatteo, periodista, entró en 2010 de forma clandestina, escondido en el fondo de un jeep, hasta el campamento de protesta de Gdeim Izik. En 2013 lo retuvieron en el aeropuerto de El Aaiún, lo interrogaron y lo expulsaron escoltado por la policía. Para proteger a sus fuentes reconoce haberse autocensurado muchas veces: algunos de los activistas que entrevistó siguen en prisión.</p></div>
-          <p class="trailer"><a href="https://youtu.be/hWk1S_ziE2s" target="_blank" rel="noopener">Ver el tráiler</a></p>
-          <div class="compartir" data-url="https://censuradosfilmfestival.com/observatorio.html#el-muro-sahara" data-titulo="El muro. La herida del Sáhara — Archivo vivo de cine censurado">
-            <span class="pequeno">Compartir:</span>
-            <a href="https://wa.me/?text=El%20muro.%20La%20herida%20del%20S%C3%A1hara%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23el-muro-sahara" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23el-muro-sahara" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?text=El%20muro.%20La%20herida%20del%20S%C3%A1hara%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23el-muro-sahara" target="_blank" rel="noopener">X</a>
-            <button type="button" class="copiar">Copiar enlace</button>
-          </div>
-          </div>
-        </li>
-        <li class="pelicula" id="entre-el-hierro-y-el-mar">
-          <figure class="pel-foto sin-foto" style="--franja:var(--amarillo)" aria-hidden="true"><span>Entre el hierro y el mar</span></figure>
-          <div class="pel-texto">
-          <h3>Entre el hierro y el mar</h3><p class="ficha">Maga Zevallos · Perú · 2020 · Documental, 64 min</p><a class="ed" href="trayectoria.html#e7">7.ª edición</a>
-          <p>Marcona (Ica), el único productor de hierro del Perú, con casi todo su territorio concesionado a la minería: disputas por la tierra, contaminación y derechos laborales.</p>
-          <div class="historia"><p class="historia-titulo">El caso</p><p>Zevallos rodó sola durante diez meses, con un perfil bajo. Cuando quiso grabar la fachada de la mina, la seguridad de Shougang la filmó e intentó quitarle la cámara.</p><p>Tras el estreno en Lima, en febrero de 2020, llegaron las cartas notariales, una campaña de desinformación en redes y en panfletos, y llamadas para impedir las proyecciones. En Ica, un grupo llegado desde Marcona intentó boicotear la función, y periodistas que no habían visto la película difundieron que había recibido millón y medio de dólares de ONG extranjeras; en realidad se financió con fondos propios. La directora tuvo que pedir garantías para su seguridad y la de su equipo.</p></div>
-          <p class="trailer"><a href="https://www.youtube.com/watch?v=AtUsNOUpS8o" target="_blank" rel="noopener">Ver el tráiler</a></p>
-          <div class="compartir" data-url="https://censuradosfilmfestival.com/observatorio.html#entre-el-hierro-y-el-mar" data-titulo="Entre el hierro y el mar — Archivo vivo de cine censurado">
-            <span class="pequeno">Compartir:</span>
-            <a href="https://wa.me/?text=Entre%20el%20hierro%20y%20el%20mar%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23entre-el-hierro-y-el-mar" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23entre-el-hierro-y-el-mar" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?text=Entre%20el%20hierro%20y%20el%20mar%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23entre-el-hierro-y-el-mar" target="_blank" rel="noopener">X</a>
-            <button type="button" class="copiar">Copiar enlace</button>
-          </div>
-          </div>
-        </li>
-        <li class="pelicula" id="fuera-porta">
-          <figure class="pel-foto sin-foto" style="--franja:var(--agua)" aria-hidden="true"><span>Fuera Porta: un grito de lucha</span></figure>
-          <div class="pel-texto">
-          <h3>Fuera Porta: un grito de lucha</h3><p class="ficha">Florencia Reynoso · Argentina · 2018 · Documental, 35 min</p><a class="ed" href="trayectoria.html#e7">7.ª edición</a>
-          <p>Las vecinas y vecinos de San Antonio, en Córdoba, frente a la planta de bioetanol de Porta Hermanos, que funciona junto a sus casas desde 2012 sin estudio de impacto ambiental.</p>
-          <div class="historia"><p class="historia-titulo">El caso</p><p>El equipo fue seguido y vigilado por la empresa durante el rodaje. Tras un estreno con 550 personas en 2019, la segunda proyección se canceló por «presiones de la Municipalidad de Córdoba».</p><p>En noviembre, el Museo de Bellas Artes Evita – Palacio Ferreyra la retiró de su programación un día antes, a pedido de la Secretaría de Cultura provincial y con «amenazas de despidos» de por medio. Se proyectó igualmente en la calle, frente al museo, bajo el lema «Silenciadxs nunca más». La directora del museo fue destituida.</p></div>
-          <p class="trailer"><a href="https://vimeo.com/357431144" target="_blank" rel="noopener">Ver el tráiler</a></p>
-          <div class="compartir" data-url="https://censuradosfilmfestival.com/observatorio.html#fuera-porta" data-titulo="Fuera Porta: un grito de lucha — Archivo vivo de cine censurado">
-            <span class="pequeno">Compartir:</span>
-            <a href="https://wa.me/?text=Fuera%20Porta%3A%20un%20grito%20de%20lucha%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23fuera-porta" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23fuera-porta" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?text=Fuera%20Porta%3A%20un%20grito%20de%20lucha%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23fuera-porta" target="_blank" rel="noopener">X</a>
-            <button type="button" class="copiar">Copiar enlace</button>
-          </div>
-          </div>
-        </li>
-        <li class="pelicula" id="jose">
-          <figure class="pel-foto sin-foto" style="--franja:var(--rojo)" aria-hidden="true"><span>José</span></figure>
-          <div class="pel-texto">
-          <h3>José</h3><p class="ficha">Li Cheng · Guatemala · 2018 · Ficción, 85 min</p><a class="ed" href="trayectoria.html#e7">7.ª edición</a>
-          <p>José, de 19 años, vende comida en las calles de Guatemala y vive con su madre. Una aplicación de citas lo lleva hasta Luis, y a un amor que no imaginaba.</p>
-          <div class="historia"><p class="historia-titulo">El caso</p><p>Ganó el Queer Lion en Venecia, pero los gobiernos de Singapur y Macao prohibieron su exhibición por su contenido homosexual, y los festivales que la habían seleccionado tuvieron que retirarle la invitación.</p><p>Aunque se ha visto en más de 50 países, en América Latina apenas ha circulado: una sola proyección en Guatemala y ninguna en Chile. En 2020, Estados Unidos negó dos veces el visado a su protagonista, Enrique Salanic, para promocionarla, pese al respaldo de la distribuidora y de un congresista.</p></div>
-          <p class="trailer"><a href="https://www.youtube.com/watch?v=BosKW_Zspgs" target="_blank" rel="noopener">Ver el tráiler</a></p>
-          <div class="compartir" data-url="https://censuradosfilmfestival.com/observatorio.html#jose" data-titulo="José — Archivo vivo de cine censurado">
-            <span class="pequeno">Compartir:</span>
-            <a href="https://wa.me/?text=Jos%C3%A9%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23jose" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23jose" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?text=Jos%C3%A9%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23jose" target="_blank" rel="noopener">X</a>
-            <button type="button" class="copiar">Copiar enlace</button>
-          </div>
-          </div>
-        </li>
-        <li class="pelicula" id="lo-que-nos-queda">
-          <figure class="pel-foto sin-foto" style="--franja:var(--amarillo)" aria-hidden="true"><span>Lo que nos queda</span></figure>
-          <div class="pel-texto">
-          <h3>Lo que nos queda</h3><p class="ficha">Yudiel Landa · México · 2020 · Documental, 19 min</p><a class="ed" href="trayectoria.html#e7">7.ª edición</a>
-          <p>En 2014, en Nueva Italia (Michoacán), las autodefensas incendiaron las propiedades ligadas al narcotráfico, también el único cine del pueblo. «¿Ahora qué vamos a hacer si no tenemos cine?»</p>
-          <div class="historia"><p class="historia-titulo">El caso</p><p>En 2019 iba a estrenarse en la plaza de Armas de Nueva Italia, en el primer gran evento cultural del pueblo. Cuando se anunció en redes, el organizador recibió una llamada que amenazaba al equipo y a sus familias si no cancelaban la proyección. El evento se suspendió.</p><p>Desde entonces solo ha habido dos pases privados, de menos de veinte personas, uno de ellos en la cochera del director. Los colectivos culturales del pueblo han desaparecido por la infiltración del narcotráfico en el gobierno local.</p></div>
-          <p class="trailer"><a href="https://www.youtube.com/watch?v=mBV6TTJAfCo" target="_blank" rel="noopener">Ver el tráiler</a></p>
-          <div class="compartir" data-url="https://censuradosfilmfestival.com/observatorio.html#lo-que-nos-queda" data-titulo="Lo que nos queda — Archivo vivo de cine censurado">
-            <span class="pequeno">Compartir:</span>
-            <a href="https://wa.me/?text=Lo%20que%20nos%20queda%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23lo-que-nos-queda" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23lo-que-nos-queda" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?text=Lo%20que%20nos%20queda%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23lo-que-nos-queda" target="_blank" rel="noopener">X</a>
-            <button type="button" class="copiar">Copiar enlace</button>
-          </div>
-          </div>
-        </li>
-        <li class="pelicula" id="nosotros-no-olvidamos">
-          <figure class="pel-foto sin-foto" style="--franja:var(--agua)" aria-hidden="true"><span>Nosotros no olvidamos</span></figure>
-          <div class="pel-texto">
-          <h3>Nosotros no olvidamos</h3><p class="ficha">Damià Puig · España · 2020 · Documental, 85 min</p><a class="ed" href="trayectoria.html#e7">7.ª edición</a>
-          <p>En 1992, Pedro Álvarez, de 20 años, fue asesinado en L’Hospitalet de Llobregat tras una discusión de tráfico. Las pruebas señalan a un policía nacional que nunca fue juzgado.</p>
-          <div class="historia"><p class="historia-titulo">El caso</p><p>El Parlamento de Cataluña aprobó una resolución que pedía reabrir el caso y recomendaba a TV3 emitir el documental. La televisión pública nunca lo hizo: alegó «aspectos técnicos insalvables», aunque había emitido otros trabajos con las mismas características.</p><p>Fuentes internas confirmaron al director que tocar a los Mossos d’Esquadra, protagonistas de uno de los casos de la película, era prácticamente imposible en la televisión catalana. El Parlamento no volvió a insistir.</p></div>
-          <p class="trailer"><a href="https://www.youtube.com/watch?v=lkR7zGPSeWQ" target="_blank" rel="noopener">Ver el tráiler</a></p>
-          <div class="compartir" data-url="https://censuradosfilmfestival.com/observatorio.html#nosotros-no-olvidamos" data-titulo="Nosotros no olvidamos — Archivo vivo de cine censurado">
-            <span class="pequeno">Compartir:</span>
-            <a href="https://wa.me/?text=Nosotros%20no%20olvidamos%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23nosotros-no-olvidamos" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23nosotros-no-olvidamos" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?text=Nosotros%20no%20olvidamos%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23nosotros-no-olvidamos" target="_blank" rel="noopener">X</a>
-            <button type="button" class="copiar">Copiar enlace</button>
-          </div>
-          </div>
-        </li>
-        <li class="pelicula" id="suenos-al-pairo">
-          <figure class="pel-foto sin-foto" style="--franja:var(--rojo)" aria-hidden="true"><span>Sueños al pairo</span></figure>
-          <div class="pel-texto">
-          <h3>Sueños al pairo</h3><p class="ficha">José Luis Aparicio y Fernando Fraguela · Cuba · 2020 · Documental, 32 min</p><a class="ed" href="trayectoria.html#e7">7.ª edición</a>
-          <p>Mike Porcel, una de las voces más originales de la canción cubana desde finales de los años sesenta.</p>
-          <div class="historia"><p class="historia-titulo">El caso</p><p>Su decisión de emigrar durante el éxodo del Mariel, en 1980, le costó ser condenado al silencio y al ostracismo en su país, una sanción que se mantiene hasta hoy.</p></div>
-          <div class="compartir" data-url="https://censuradosfilmfestival.com/observatorio.html#suenos-al-pairo" data-titulo="Sueños al pairo — Archivo vivo de cine censurado">
-            <span class="pequeno">Compartir:</span>
-            <a href="https://wa.me/?text=Sue%C3%B1os%20al%20pairo%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23suenos-al-pairo" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23suenos-al-pairo" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?text=Sue%C3%B1os%20al%20pairo%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23suenos-al-pairo" target="_blank" rel="noopener">X</a>
-            <button type="button" class="copiar">Copiar enlace</button>
-          </div>
-          </div>
-        </li>
-      </ul>
-      <h3 class="anio-archivo">2019</h3>
-      <ul class="peliculas">
-        <li class="pelicula" id="anotes-ark">
-          <figure class="pel-foto sin-foto" style="--franja:var(--amarillo)" aria-hidden="true"><span>Anote’s Ark</span></figure>
-          <div class="pel-texto">
-          <h3>Anote’s Ark</h3><p class="ficha">Matthieu Rytz · Canadá · 2018 · Documental, 77 min</p><a class="ed" href="trayectoria.html#e6">6.ª edición</a>
-          <p>Kiribati, un atolón del Pacífico que el mar podría tragarse antes de que acabe el siglo, y su expresidente Anote Tong buscando una salida por el mundo.</p>
-          <div class="historia"><p class="historia-titulo">El caso</p><p>El nuevo gobierno de Kiribati, de política opuesta a la de Tong, canceló varias proyecciones. En la Navidad de 2017, cuando Rytz volvió para mostrar la película a la población, tres policías irrumpieron en la casa donde se alojaba, se quedaron con su computadora y le ordenaron salir del país en el siguiente vuelo.</p></div>
-          <div class="compartir" data-url="https://censuradosfilmfestival.com/observatorio.html#anotes-ark" data-titulo="Anote’s Ark — Archivo vivo de cine censurado">
-            <span class="pequeno">Compartir:</span>
-            <a href="https://wa.me/?text=Anote%E2%80%99s%20Ark%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23anotes-ark" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23anotes-ark" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?text=Anote%E2%80%99s%20Ark%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23anotes-ark" target="_blank" rel="noopener">X</a>
-            <button type="button" class="copiar">Copiar enlace</button>
-          </div>
-          </div>
-        </li>
-        <li class="pelicula" id="rafiki">
-          <figure class="pel-foto sin-foto" style="--franja:var(--agua)" aria-hidden="true"><span>Rafiki</span></figure>
-          <div class="pel-texto">
-          <h3>Rafiki</h3><p class="ficha">Wanuri Kahiu · Kenia · 2018 · Ficción, 83 min</p><a class="ed" href="trayectoria.html#e6">6.ª edición</a>
-          <p>Dos jóvenes se enamoran en Nairobi, en un país donde las relaciones entre personas del mismo sexo se castigan con hasta 14 años de cárcel.</p>
-          <div class="historia"><p class="historia-titulo">El caso</p><p>Diez días después de que el Ministerio de Cultura celebrara su selección en Cannes, la Junta de Clasificación de Kenia la prohibió por «promover el lesbianismo», amparándose en una ley de la época colonial. Según Kahiu, el motivo real fue que se negó a cambiar el final.</p><p>Tras su demanda, una jueza permitió exhibirla una semana, solo para adultos, para que pudiera optar al Óscar; las salas se llenaron. La directora recibió amenazas de arresto y pidió que nadie la viera pirateada: «eso haría peligrar mi libertad y mi vida».</p></div>
-          <div class="compartir" data-url="https://censuradosfilmfestival.com/observatorio.html#rafiki" data-titulo="Rafiki — Archivo vivo de cine censurado">
-            <span class="pequeno">Compartir:</span>
-            <a href="https://wa.me/?text=Rafiki%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23rafiki" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23rafiki" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?text=Rafiki%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23rafiki" target="_blank" rel="noopener">X</a>
-            <button type="button" class="copiar">Copiar enlace</button>
-          </div>
-          </div>
-        </li>
-        <li class="pelicula" id="of-fathers-and-sons">
-          <figure class="pel-foto sin-foto" style="--franja:var(--rojo)" aria-hidden="true"><span>Of Fathers and Sons</span></figure>
-          <div class="pel-texto">
-          <h3>Of Fathers and Sons</h3><p class="ficha">Talal Derki · Alemania · 2017 · Documental, 98 min</p><a class="ed" href="trayectoria.html#e6">6.ª edición</a>
-          <p>El cineasta sirio Talal Derki vuelve a su país y convive durante dos años con una familia yihadista.</p>
-          <div class="historia"><p class="historia-titulo">El caso</p><p>Nominada al Óscar al mejor documental en 2019, Estados Unidos negó al principio el visado a su director, sirio exiliado en Berlín, para asistir a la ceremonia. Se lo aprobaron a pocos días de la gala, pero no a su esposa, también con pasaporte sirio.</p></div>
-          <div class="compartir" data-url="https://censuradosfilmfestival.com/observatorio.html#of-fathers-and-sons" data-titulo="Of Fathers and Sons — Archivo vivo de cine censurado">
-            <span class="pequeno">Compartir:</span>
-            <a href="https://wa.me/?text=Of%20Fathers%20and%20Sons%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23of-fathers-and-sons" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23of-fathers-and-sons" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?text=Of%20Fathers%20and%20Sons%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23of-fathers-and-sons" target="_blank" rel="noopener">X</a>
-            <button type="button" class="copiar">Copiar enlace</button>
-          </div>
-          </div>
-        </li>
-        <li class="pelicula" id="the-crying-of-tambur">
-          <figure class="pel-foto sin-foto" style="--franja:var(--amarillo)" aria-hidden="true"><span>The Crying of Tambur</span></figure>
-          <div class="pel-texto">
-          <h3>The Crying of Tambur</h3><p class="ficha">Anisa Sabiri · Tayikistán · 2018 · Ficción, 25 min</p><a class="ed" href="trayectoria.html#e6">6.ª edición</a>
-          <p>La historia familiar de un reportero en la guerra civil de Tayikistán, que en los años noventa dejó decenas de miles de muertos y sigue siendo un tabú en el país.</p>
-          <div class="historia"><p class="historia-titulo">El caso</p><p>La agencia de cine del gobierno rechazó tres veces el permiso de rodaje, y la directora tuvo que quitar del guion las escenas de batalla. Terminada la película, la citaron en comisaría y le exigieron entregar el disco duro con todo el material original.</p></div>
-          <div class="compartir" data-url="https://censuradosfilmfestival.com/observatorio.html#the-crying-of-tambur" data-titulo="The Crying of Tambur — Archivo vivo de cine censurado">
-            <span class="pequeno">Compartir:</span>
-            <a href="https://wa.me/?text=The%20Crying%20of%20Tambur%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23the-crying-of-tambur" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23the-crying-of-tambur" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?text=The%20Crying%20of%20Tambur%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23the-crying-of-tambur" target="_blank" rel="noopener">X</a>
-            <button type="button" class="copiar">Copiar enlace</button>
-          </div>
-          </div>
-        </li>
-        <li class="pelicula" id="gaza">
-          <figure class="pel-foto sin-foto" style="--franja:var(--agua)" aria-hidden="true"><span>Gaza</span></figure>
-          <div class="pel-texto">
-          <h3>Gaza</h3><p class="ficha">Carles Bover y Julio Pérez del Campo · España · 2017 · Documental, 18 min</p><a class="ed" href="trayectoria.html#e6">6.ª edición</a>
-          <p>La vida en la Franja de Gaza tras la ofensiva israelí de 2014, que dejó más de 2.200 muertos.</p>
-          <div class="historia"><p class="historia-titulo">El caso</p><p>Para poder entrar en la Franja, Pérez del Campo, profesor de biología, pidió permiso para un estudio sobre agricultura. Ya terminada, la película sufrió intentos de censura en festivales y salas, y la propia Academia de Cine recibió amenazas antes de darle el Goya al mejor cortometraje documental.</p><p>El Arzobispado de Madrid prohibió su proyección en la parroquia de San Carlos Borromeo por la «presión» de la comunidad judía, según comunicó la propia parroquia.</p></div>
-          <div class="compartir" data-url="https://censuradosfilmfestival.com/observatorio.html#gaza" data-titulo="Gaza — Archivo vivo de cine censurado">
-            <span class="pequeno">Compartir:</span>
-            <a href="https://wa.me/?text=Gaza%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado%20https%3A//censuradosfilmfestival.com/observatorio.html%23gaza" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//censuradosfilmfestival.com/observatorio.html%23gaza" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?text=Gaza%20%E2%80%94%20Archivo%20vivo%20de%20cine%20censurado&amp;url=https%3A//censuradosfilmfestival.com/observatorio.html%23gaza" target="_blank" rel="noopener">X</a>
-            <button type="button" class="copiar">Copiar enlace</button>
-          </div>
-          </div>
-        </li>
-      </ul>
+      <p class="sin-resultados" id="sin-resultados" hidden>No hay películas con esa búsqueda.</p>
     </div>
+    <dialog class="dialogo-caso" id="dialogo-caso" aria-label="Caso de censura">
+      <button type="button" class="cerrar" aria-label="Cerrar">×</button>
+      <div class="dialogo-contenido"></div>
+    </dialog>
   </section>
 
   <section class="bloque fondo-amarillo" id="construccion">
@@ -428,6 +517,7 @@
   </div>
 </footer>
 <script src="js/menu.js"></script>
+<script src="js/archivo.js"></script>
 <script src="js/compartir.js"></script>
 </body>
 </html>
