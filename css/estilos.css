@@ -279,7 +279,7 @@ h1, h2 { overflow-wrap: break-word; }
 /* Organizadores en el pie de todas las páginas */
 .pie .organizan-titulo { font-size: 1.2rem; margin: 28px 0 10px; color: var(--amarillo); }
 .organizan { display: flex; align-items: center; gap: 22px; text-decoration: none; }
-.pie .organizan img { width: 84px; }
+.pie .organizan img { height: 88px; width: auto; }
 .org-combi { font-family: var(--display); font-weight: 900; font-size: 1.9rem; line-height: 0.85; text-transform: uppercase; }
 .org-combi small { display: block; font-size: 0.85rem; font-weight: 700; margin-top: 4px; }
 .organizan:hover .org-combi { color: var(--amarillo); }
