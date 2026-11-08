@@ -552,3 +552,11 @@ ul.formas { margin: 0; padding: 0; }
 .formas-titulo { margin-bottom: 4px; }
 .no-censura p + p { margin-top: 12px; }
 .enlace-claro { color: var(--amarillo); font-weight: 700; }
+
+/* Vídeo vertical del Observatorio */
+.video-vertical { width: 100%; max-width: 360px; aspect-ratio: 9 / 16; background: var(--negro); justify-self: center; display: block; border: 3px solid var(--negro); }
+.etiqueta-obs { display: inline-block; margin: 0 0 12px; padding: 2px 12px; background: var(--negro); color: var(--amarillo); font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; }
+.obs-cabeza { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: clamp(24px, 5vw, 64px); align-items: center; }
+.obs-cabeza .video-vertical { max-width: 300px; }
+.obs-cabeza h1 { font-size: clamp(2.8rem, 7vw, 6.2rem); }
+@media (max-width: 860px) { .obs-cabeza { grid-template-columns: 1fr; } }
