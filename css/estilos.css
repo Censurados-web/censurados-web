@@ -569,3 +569,5 @@ ul.formas { margin: 0; padding: 0; }
 .mueve li:nth-child(3) strong { color: var(--amarillo); }
 .mueve li:nth-child(4) strong { color: var(--rojo); }
 .conocenos-intro > .entradilla { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.02; }
+.obs-cabeza.solo { grid-template-columns: 1fr; }
+.obs-cabeza.solo h1 { font-size: inherit; }
