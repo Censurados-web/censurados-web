@@ -53,12 +53,12 @@
         <p class="entradilla">¿Conoces un caso de censura contra una película, contra quien la hizo o contra un espacio que la mostró? Cuéntanoslo.</p>
         <p><strong>No necesitamos tu nombre, solo tu historia.</strong> El correo es opcional: déjalo solo si quieres que te respondamos. Investigaremos el caso con discreción y, si se confirma, podrá entrar en el <a href="observatorio.html#archivo">Archivo vivo</a> o en la programación.</p>
       </div>
-      <form class="formulario" action="https://formsubmit.co/censuradosfilmfestival@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="Aviso de caso de censura (anónimo)">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://censuradosfilmfestival.com/gracias.html">
-        <input type="text" name="_honey" class="oculto" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <form class="formulario" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="2161917e-7480-4c94-b135-0ec909a05093">
+        <input type="hidden" name="subject" value="Aviso de caso de censura (anónimo)">
+        <input type="hidden" name="from_name" value="Web Censurados · Observatorio">
+        <input type="hidden" name="redirect" value="https://censuradosfilmfestival.com/gracias.html">
+        <input type="checkbox" name="botcheck" class="oculto" tabindex="-1" autocomplete="off" aria-hidden="true">
         <label>Título de la película (si lo sabes)<input type="text" name="Título"></label>
         <label>País<input type="text" name="País"></label>
         <label>¿Qué ha pasado?<textarea name="Caso" rows="6" required placeholder="Quién la censuró, cuándo, cómo…"></textarea></label>
@@ -87,11 +87,12 @@
         </ul>
       </div>
 
-      <form class="formulario" action="https://formsubmit.co/censuradosfilmfestival@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="Convocatoria permanente: nueva película">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://censuradosfilmfestival.com/gracias.html">
-        <input type="text" name="_honey" class="oculto" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <form class="formulario" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="2161917e-7480-4c94-b135-0ec909a05093">
+        <input type="hidden" name="subject" value="Convocatoria permanente: nueva película">
+        <input type="hidden" name="from_name" value="Web Censurados · Convocatoria">
+        <input type="hidden" name="redirect" value="https://censuradosfilmfestival.com/gracias.html">
+        <input type="checkbox" name="botcheck" class="oculto" tabindex="-1" autocomplete="off" aria-hidden="true">
 
         <h2>Inscribe tu película</h2>
         <label>Tu nombre<input type="text" name="Nombre" required autocomplete="name"></label>
