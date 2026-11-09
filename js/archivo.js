@@ -4,7 +4,7 @@
   if (!fichas.length) return;
   // Siempre de la edición más reciente a la más antigua (manteniendo el orden dentro de cada edición)
   fichas = fichas.map(function (li, i) { return { li: li, i: i }; })
-    .sort(function (a, b) { return (b.li.dataset.anio - a.li.dataset.anio) || (a.i - b.i); })
+    .sort(function (a, b) { return (b.li.dataset.ed - a.li.dataset.ed) || (a.i - b.i); })
     .map(function (o) { return o.li; });
   var lista = fichas[0].parentNode;
   fichas.forEach(function (li) { lista.appendChild(li); });
