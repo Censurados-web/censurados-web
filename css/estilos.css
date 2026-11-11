@@ -609,3 +609,6 @@ ul.formas { margin: 0; padding: 0; }
 .info-datos { font-size: 0.9rem; line-height: 1.5; border-left: 4px solid currentColor; padding: 0.6em 0 0.6em 1em; margin: 1em 0; opacity: 0.95; }
 .info-datos p { margin: 0 0 0.4em; }
 .pie .legal a { color: inherit; }
+.bases { padding-left: 1.3em; }
+.bases li { margin-bottom: 0.8em; line-height: 1.5; }
+.bases li::marker { font-family: var(--display); font-weight: 800; color: var(--amarillo); }
