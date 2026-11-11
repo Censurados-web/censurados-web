@@ -35,39 +35,11 @@
 <section class="cabeza-pagina fondo-amarillo">
     <div class="contenedor">
       <h1>Convocatoria permanente</h1>
-      <p class="entradilla">Abierta todo el año. Si conoces un caso de censura, avísanos, también de forma anónima. Y si tienes los derechos de una película censurada, inscríbela.</p>
+      <p class="entradilla">Abierta todo el año. Si tienes los derechos de una película censurada, inscríbela. Y si conoces un caso de censura en el cine o el audiovisual, cuéntanoslo: no necesitamos tu nombre, solo tu historia.</p>
       <nav class="subnav" aria-label="Secciones de la convocatoria">
-        <a href="#avisa">Avisa de un caso</a>
         <a href="#inscribe">Inscribe tu película</a>
+        <a href="#avisa">Avisa de un caso</a>
       </nav>
-    </div>
-  </section>
-
-  <section class="bloque fondo-rojo" id="avisa">
-    <div class="contenedor dos-columnas">
-      <div>
-        <h2>Avisa de un caso de censura</h2>
-        <p class="entradilla">¿Conoces un caso de censura contra una película, contra quien la hizo o contra un espacio que la mostró? Cuéntanoslo.</p>
-        <p><strong>No necesitamos tu nombre, solo tu historia.</strong> El correo es opcional: déjalo solo si quieres que te respondamos. Investigaremos el caso con discreción y, si se confirma, podrá entrar en el <a href="observatorio.html#archivo">Archivo vivo</a> o en la programación.</p>
-      </div>
-      <form class="formulario" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="2161917e-7480-4c94-b135-0ec909a05093">
-        <input type="hidden" name="subject" value="Aviso de caso de censura (anónimo)">
-        <input type="hidden" name="from_name" value="Web Censurados · Observatorio">
-        <input type="hidden" name="redirect" value="https://censuradosfilmfestival.com/gracias.html">
-        <input type="checkbox" name="botcheck" class="oculto" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <label>Título de la película (si lo sabes)<input type="text" name="Título"></label>
-        <label>País<input type="text" name="País"></label>
-        <label>¿Qué ha pasado?<textarea name="Caso" rows="6" required placeholder="Quién la censuró, cuándo, cómo…"></textarea></label>
-        <label>Enlaces o fuentes (opcional)<textarea name="Fuentes" rows="3"></textarea></label>
-        <label>Correo para responderte (opcional)<input type="email" name="Correo de contacto (opcional)" autocomplete="off"></label>
-        <p class="pequeno">No te pedimos tu nombre. Si no escribes tu correo, el aviso nos llega sin datos tuyos, salvo los datos técnicos (como la dirección IP) que el servicio de envío usa para filtrar el spam. Por favor, no incluyas datos personales de otras personas que no sean necesarios para entender el caso.</p>
-        <div class="info-datos">
-          <p><strong>Protección de datos.</strong> Responsable: La Combi – arte rodante. Finalidad: investigar el caso y, si nos dejas correo, responderte. Nunca publicamos datos que identifiquen a quien nos avisa. Base legal: tu consentimiento. Destinatarios: ninguno; el envío lo gestiona Web3Forms, con servidores fuera de tu país. Derechos: acceso, rectificación, supresión y otros, escribiendo a censuradosfilmfestival@gmail.com. Más información en la <a href="privacidad.html">política de privacidad</a>.</p>
-        </div>
-        <label class="casilla"><input type="checkbox" name="Acepta privacidad" value="Sí" required> <span>He leído la <a href="privacidad.html">política de privacidad</a> y acepto que tratéis la información que envío.</span></label>
-        <button type="submit" class="boton">Enviar aviso</button>
-      </form>
     </div>
   </section>
 
@@ -120,6 +92,34 @@
         </div>
         <label class="casilla"><input type="checkbox" name="Acepta privacidad" value="Sí" required> <span>Tengo al menos 14 años, he leído la <a href="privacidad.html">política de privacidad</a> y acepto que tratéis mis datos para esta convocatoria.</span></label>
         <button type="submit" class="boton">Enviar inscripción</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="bloque fondo-rojo" id="avisa">
+    <div class="contenedor dos-columnas">
+      <div>
+        <h2>Avisa de un caso de censura</h2>
+        <p class="entradilla">¿Conoces un caso de censura contra una película, contra quien la hizo o contra un espacio que la mostró? Cuéntanoslo.</p>
+        <p><strong>No necesitamos tu nombre, solo tu historia.</strong> El correo es opcional: déjalo solo si quieres que te respondamos. Investigaremos el caso con discreción y, si se confirma, podrá entrar en el <a href="observatorio.html#archivo">Archivo vivo</a> o en la programación.</p>
+      </div>
+      <form class="formulario" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="2161917e-7480-4c94-b135-0ec909a05093">
+        <input type="hidden" name="subject" value="Aviso de caso de censura (anónimo)">
+        <input type="hidden" name="from_name" value="Web Censurados · Observatorio">
+        <input type="hidden" name="redirect" value="https://censuradosfilmfestival.com/gracias.html">
+        <input type="checkbox" name="botcheck" class="oculto" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label>Título de la película (si lo sabes)<input type="text" name="Título"></label>
+        <label>País<input type="text" name="País"></label>
+        <label>¿Qué ha pasado?<textarea name="Caso" rows="6" required placeholder="Quién la censuró, cuándo, cómo…"></textarea></label>
+        <label>Enlaces o fuentes (opcional)<textarea name="Fuentes" rows="3"></textarea></label>
+        <label>Correo para responderte (opcional)<input type="email" name="Correo de contacto (opcional)" autocomplete="off"></label>
+        <p class="pequeno">No te pedimos tu nombre. Si no escribes tu correo, el aviso nos llega sin datos tuyos, salvo los datos técnicos (como la dirección IP) que el servicio de envío usa para filtrar el spam. Por favor, no incluyas datos personales de otras personas que no sean necesarios para entender el caso.</p>
+        <div class="info-datos">
+          <p><strong>Protección de datos.</strong> Responsable: La Combi – arte rodante. Finalidad: investigar el caso y, si nos dejas correo, responderte. Nunca publicamos datos que identifiquen a quien nos avisa. Base legal: tu consentimiento. Destinatarios: ninguno; el envío lo gestiona Web3Forms, con servidores fuera de tu país. Derechos: acceso, rectificación, supresión y otros, escribiendo a censuradosfilmfestival@gmail.com. Más información en la <a href="privacidad.html">política de privacidad</a>.</p>
+        </div>
+        <label class="casilla"><input type="checkbox" name="Acepta privacidad" value="Sí" required> <span>He leído la <a href="privacidad.html">política de privacidad</a> y acepto que tratéis la información que envío.</span></label>
+        <button type="submit" class="boton">Enviar aviso</button>
       </form>
     </div>
   </section>
