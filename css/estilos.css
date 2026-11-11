@@ -1,3 +1,10 @@
+/* Tipografías alojadas en la propia web (sin Google Fonts) · licencia OFL en fuentes/OFL.txt */
+@font-face { font-family: "Archivo"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fuentes/archivo-400.woff") format("woff"); }
+@font-face { font-family: "Archivo"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fuentes/archivo-600.woff") format("woff"); }
+@font-face { font-family: "Big Shoulders Display"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fuentes/big-shoulders-display-700.woff") format("woff"); }
+@font-face { font-family: "Big Shoulders Display"; font-style: normal; font-weight: 800; font-display: swap; src: url("../fuentes/big-shoulders-display-800.woff") format("woff"); }
+@font-face { font-family: "Big Shoulders Display"; font-style: normal; font-weight: 900; font-display: swap; src: url("../fuentes/big-shoulders-display-900.woff") format("woff"); }
+
 /* Censurados Film Festival — hoja de estilos
    Paleta tomada de la línea gráfica oficial del festival. */
 
@@ -593,3 +600,12 @@ ul.formas { margin: 0; padding: 0; }
 .que-hacemos li { position: relative; padding-left: 26px; margin-bottom: 0.6em; }
 .que-hacemos li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 12px; height: 12px; background: var(--rojo); }
 .que-hacemos a { color: inherit; text-decoration-color: var(--rojo); }
+/* Páginas legales */
+.texto-legal { max-width: 760px; }
+.texto-legal h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 1.6em 0 0.4em; }
+.texto-legal h3 { font-family: var(--texto); font-size: 1.1rem; font-weight: 600; margin: 1.2em 0 0.3em; text-transform: none; }
+.texto-legal ul { padding-left: 1.2em; }
+.texto-legal li { margin-bottom: 0.5em; }
+.info-datos { font-size: 0.9rem; line-height: 1.5; border-left: 4px solid currentColor; padding: 0.6em 0 0.6em 1em; margin: 1em 0; opacity: 0.95; }
+.info-datos p { margin: 0 0 0.4em; }
+.pie .legal a { color: inherit; }
