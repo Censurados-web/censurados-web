@@ -623,3 +623,7 @@ ul.formas { margin: 0; padding: 0; }
 .galeria-mfd video { aspect-ratio: 16 / 9; }
 .bloque-galeria { padding-top: 0; }
 @media (max-width: 800px) { .galeria-3, .galeria-2, .galeria-mfd { grid-template-columns: 1fr; } }
+.ed-pdf { margin-top: 12px; }
+.ed-pdf a { font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.02em; }
+.ed-pdf a::before { content: "↓ "; }
+.ed-pdf span { font-family: var(--texto); font-weight: 400; text-transform: none; font-size: 0.85em; opacity: 0.8; }
