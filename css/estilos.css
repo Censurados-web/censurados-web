@@ -627,3 +627,11 @@ ul.formas { margin: 0; padding: 0; }
 .ed-pdf a { font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.02em; }
 .ed-pdf a::before { content: "↓ "; }
 .ed-pdf span { font-family: var(--texto); font-weight: 400; text-transform: none; font-size: 0.85em; opacity: 0.8; }
+/* Testimonios */
+.testimonios { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin-top: 32px; }
+.testimonios figure { margin: 0; }
+.testimonios video { width: 100%; aspect-ratio: 16 / 9; background: #111; display: block; }
+.testimonios figcaption { margin-top: 12px; line-height: 1.5; }
+@media (max-width: 800px) { .testimonios { grid-template-columns: 1fr; } }
+.ed-cartel { display: block; transition: transform .2s, box-shadow .2s; }
+.ed-cartel:hover, .ed-cartel:focus-visible { transform: translateY(-4px); box-shadow: 0 0 0 4px var(--color-ed, var(--amarillo)); }

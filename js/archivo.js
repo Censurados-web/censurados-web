@@ -63,6 +63,8 @@
   dialogo.querySelector('.cerrar').addEventListener('click', function () { cerrar(); });
   dialogo.addEventListener('close', function () { if (abierto) cerrar(); });
   dialogo.addEventListener('click', function (e) { if (e.target === dialogo) cerrar(); });
+  // Un enlace interno dentro del caso (p. ej. #testimonios) cierra la ventana y lleva a esa sección
+  dialogo.addEventListener('click', function (e) { var en = e.target.closest && e.target.closest('a[href^="#"]'); if (en) cerrar(false); });
 
   [busca, fAnio, fPais].forEach(function (el) { el.addEventListener('input', filtrar); });
   filtrar();
