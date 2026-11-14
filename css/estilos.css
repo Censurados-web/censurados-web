@@ -612,3 +612,14 @@ ul.formas { margin: 0; padding: 0; }
 .bases { padding-left: 1.3em; }
 .bases li { margin-bottom: 0.8em; line-height: 1.5; }
 .bases li::marker { font-family: var(--display); font-weight: 800; color: var(--amarillo); }
+/* Galerías de fotos */
+.galeria { display: grid; gap: 16px; }
+.galeria figure { margin: 0; }
+.galeria img, .galeria video { width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block; background: #111; }
+.galeria figcaption { margin-top: 8px; }
+.galeria-3 { grid-template-columns: repeat(3, 1fr); }
+.galeria-2 { grid-template-columns: repeat(2, 1fr); margin-top: 48px; }
+.galeria-mfd { grid-template-columns: 2fr 1fr 1fr; margin-top: 40px; grid-column: 1 / -1; }
+.galeria-mfd video { aspect-ratio: 16 / 9; }
+.bloque-galeria { padding-top: 0; }
+@media (max-width: 800px) { .galeria-3, .galeria-2, .galeria-mfd { grid-template-columns: 1fr; } }
