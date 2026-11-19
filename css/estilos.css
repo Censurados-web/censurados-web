@@ -655,3 +655,29 @@ ul.formas { margin: 0; padding: 0; }
 .medios-plegable > summary::after { content: ' +'; }
 .medios-plegable[open] > summary::after { content: ' –'; }
 .medios-plegable > summary:hover, .medios-plegable > summary:focus-visible { background: var(--amarillo); color: var(--negro); }
+
+/* Ediciones en rejilla de carteles + ventana */
+.ed-ayuda { margin: 32px 0 16px; color: var(--gris); }
+.ediciones-rejilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; }
+.ediciones-rejilla .edicion { display: block; padding: 0; border: 0; }
+.ediciones-rejilla .edicion:last-child { border: 0; }
+.ed-abrir { display: flex; flex-direction: column; gap: 6px; width: 100%; padding: 0; background: none; border: 0; color: var(--blanco); font: inherit; text-align: left; cursor: pointer; }
+.ed-portada { display: block; aspect-ratio: 3 / 4; overflow: hidden; background: #151515; border-bottom: 6px solid var(--color-ed, var(--amarillo)); transition: transform .2s, box-shadow .2s; }
+.ed-portada img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.ed-portada.ancha img { object-fit: contain; }
+.ed-portada.sin-cartel { display: flex; align-items: center; justify-content: center; background: var(--color-ed, var(--amarillo)); }
+.ed-portada.sin-cartel img { width: 60%; height: auto; }
+.ed-abrir:hover .ed-portada, .ed-abrir:focus-visible .ed-portada { transform: translateY(-4px); box-shadow: 0 0 0 4px var(--color-ed, var(--amarillo)); }
+.ed-num { display: flex; align-items: baseline; gap: 10px; margin-top: 6px; }
+.ediciones-rejilla .ed-num .ordinal { font-size: 2.6rem; }
+.ediciones-rejilla .ed-num .anio { font-size: 1.3rem; margin: 0; }
+.ed-nombre { font-family: var(--display); font-weight: 800; font-size: 1.25rem; text-transform: uppercase; line-height: 1.05; }
+.dialogo-edicion { border-color: var(--color-ed, var(--agua)); }
+.dialogo-edicion .ed-cabecera { font-family: var(--display); font-weight: 800; font-size: 1.3rem; text-transform: uppercase; margin: 0 0 4px; color: var(--color-ed, var(--amarillo)); }
+.dialogo-edicion .ed-cabecera .ordinal { font-size: inherit; color: inherit; }
+.dialogo-edicion h3 { color: var(--blanco); }
+.dialogo-edicion .lugar { font-weight: 600; }
+.dialogo-edicion li a { color: var(--agua); }
+.dialogo-edicion figure { margin: 24px 0 0; max-width: 360px; }
+.dialogo-edicion figure img { width: 100%; }
+@media (max-width: 520px) { .ediciones-rejilla { grid-template-columns: repeat(2, 1fr); gap: 14px; } .ediciones-rejilla .ed-num .ordinal { font-size: 2rem; } }
