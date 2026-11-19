@@ -647,3 +647,11 @@ ul.formas { margin: 0; padding: 0; }
 .medios-mas li { break-inside: avoid; padding: 6px 0; border-bottom: 1px solid #222; }
 .medios-mas a { color: var(--blanco); }
 .medios-mas span { color: var(--gris); font-size: 0.85rem; margin-left: 6px; }
+
+/* Más notas plegable */
+.medios-plegable { margin-top: 48px; }
+.medios-plegable > summary { display: inline-block; cursor: pointer; list-style: none; margin: 0 0 16px; padding: 12px 22px; border: 2px solid var(--amarillo); color: var(--amarillo); font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 1.2rem; text-transform: uppercase; letter-spacing: .03em; }
+.medios-plegable > summary::-webkit-details-marker { display: none; }
+.medios-plegable > summary::after { content: ' +'; }
+.medios-plegable[open] > summary::after { content: ' –'; }
+.medios-plegable > summary:hover, .medios-plegable > summary:focus-visible { background: var(--amarillo); color: var(--negro); }
