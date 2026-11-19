@@ -683,3 +683,8 @@ ul.formas { margin: 0; padding: 0; }
 @media (max-width: 520px) { .ediciones-rejilla { grid-template-columns: repeat(2, 1fr); gap: 14px; } .ediciones-rejilla .ed-num .ordinal { font-size: 2rem; } }
 .mosaico .ver-imagenes { grid-column: 1 / -1; margin: 4px 0 0; text-align: right; font-family: var(--display); font-weight: 800; font-size: 1.2rem; text-transform: uppercase; }
 .mosaico .ver-imagenes a { color: var(--negro); }
+.micro-ediciones { list-style: none; padding: 0; margin: 10px 0 0; }
+.micro-ediciones li { padding: 8px 0 8px 14px; border-left: 4px solid var(--negro); margin-bottom: 8px; }
+.micro-ediciones strong { display: block; font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.1rem; }
+.micro-ediciones a { color: inherit; }
+.lista-plana .micro-ediciones li { border-top: 0; border-bottom: 0; border-left: 4px solid var(--negro); padding: 4px 0 4px 14px; }
