@@ -635,3 +635,15 @@ ul.formas { margin: 0; padding: 0; }
 @media (max-width: 800px) { .testimonios { grid-template-columns: 1fr; } }
 .ed-cartel { display: block; transition: transform .2s, box-shadow .2s; }
 .ed-cartel:hover, .ed-cartel:focus-visible { transform: translateY(-4px); box-shadow: 0 0 0 4px var(--color-ed, var(--amarillo)); }
+/* Censurados en los medios */
+.medios-destacados { list-style: none; padding: 0; margin: 32px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.medios-destacados a { display: flex; flex-direction: column; gap: 8px; height: 100%; padding: 20px; border: 2px solid #333; color: var(--blanco); text-decoration: none; transition: border-color .2s; }
+.medios-destacados a:hover, .medios-destacados a:focus-visible { border-color: var(--amarillo); }
+.medios-destacados .medio { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.5rem; line-height: 1; color: var(--amarillo); }
+.medios-destacados .titular { line-height: 1.4; }
+.medios-destacados .dato { margin-top: auto; font-size: 0.85rem; color: var(--gris); }
+.medios-mas-titulo { margin: 48px 0 16px; }
+.medios-mas { list-style: none; padding: 0; columns: 3 240px; column-gap: 32px; }
+.medios-mas li { break-inside: avoid; padding: 6px 0; border-bottom: 1px solid #222; }
+.medios-mas a { color: var(--blanco); }
+.medios-mas span { color: var(--gris); font-size: 0.85rem; margin-left: 6px; }
