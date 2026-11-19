@@ -681,3 +681,5 @@ ul.formas { margin: 0; padding: 0; }
 .dialogo-edicion figure { margin: 24px 0 0; max-width: 360px; }
 .dialogo-edicion figure img { width: 100%; }
 @media (max-width: 520px) { .ediciones-rejilla { grid-template-columns: repeat(2, 1fr); gap: 14px; } .ediciones-rejilla .ed-num .ordinal { font-size: 2rem; } }
+.mosaico .ver-imagenes { grid-column: 1 / -1; margin: 4px 0 0; text-align: right; font-family: var(--display); font-weight: 800; font-size: 1.2rem; text-transform: uppercase; }
+.mosaico .ver-imagenes a { color: var(--negro); }
