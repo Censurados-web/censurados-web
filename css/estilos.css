@@ -691,3 +691,4 @@ ul.formas { margin: 0; padding: 0; }
 .colaboran-titulo { margin-top: 56px; }
 .colaboran-lista { list-style: none; padding: 0; margin: 12px 0 16px; display: flex; flex-wrap: wrap; gap: 10px; }
 .colaboran-lista li { padding: 8px 14px; border: 2px solid var(--negro); font-weight: 600; }
+.texto-fronteras { max-width: 72ch; }
