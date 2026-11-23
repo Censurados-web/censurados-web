@@ -736,3 +736,4 @@ ul.formas { margin: 0; padding: 0; }
 .posible-capas .enlace-grande { color: var(--negro); }
 @media (max-width: 760px) { .posible-capas { grid-template-columns: 1fr; } }
 .posible-capas .enlace-grande { display: inline-block; margin-bottom: 10px; }
+.conocenos-intro { margin-top: 40px; }
