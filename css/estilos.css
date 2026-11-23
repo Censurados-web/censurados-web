@@ -737,3 +737,13 @@ ul.formas { margin: 0; padding: 0; }
 @media (max-width: 760px) { .posible-capas { grid-template-columns: 1fr; } }
 .posible-capas .enlace-grande { display: inline-block; margin-bottom: 10px; }
 .conocenos-intro { margin-top: 40px; }
+/* Colaboradores por bloques */
+.apoyos-destacados { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 32px 0 40px; }
+.apoyos-destacados article { background: var(--negro); color: var(--blanco); padding: 24px; }
+.apoyos-destacados h3 { color: var(--agua); font-size: 1.9rem; margin: 0 0 10px; }
+.apoyos-bloques { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 28px 40px; }
+.apoyos-bloque h3 { font-size: 1.15rem; border-bottom: 2px solid var(--negro); padding-bottom: 6px; margin: 0 0 8px; }
+.org-intro { margin-bottom: 28px; }
+.org-intro-home { margin: 20px 0 0; max-width: 60ch; }
+.colaboran-lista li.destacado { background: var(--negro); color: var(--blanco); font-size: 1.1rem; }
+@media (max-width: 760px) { .apoyos-destacados { grid-template-columns: 1fr; } }
