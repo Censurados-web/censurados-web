@@ -721,3 +721,4 @@ ul.formas { margin: 0; padding: 0; }
 .talleres-titulo { margin: 0 0 8px; }
 .portada-fotos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0 24px; }
 .portada-fotos img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block; }
+.mfd-ediciones h3 { font-size: 1.4rem; }
