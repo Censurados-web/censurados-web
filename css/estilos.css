@@ -747,3 +747,11 @@ ul.formas { margin: 0; padding: 0; }
 .org-intro-home { margin: 20px 0 0; max-width: 60ch; }
 .colaboran-lista li.destacado { background: var(--negro); color: var(--blanco); font-size: 1.1rem; }
 @media (max-width: 760px) { .apoyos-destacados { grid-template-columns: 1fr; } }
+/* Home: quienes lo hacen posible */
+.hacen-posible { text-align: center; display: flex; flex-direction: column; align-items: center; }
+.hacen-posible .hp-logo { width: 110px; height: auto; margin-bottom: 20px; }
+.hacen-posible h2 { margin: 0 0 18px; }
+.hacen-posible .logos-org { justify-content: center; }
+.hacen-posible .hp-texto { max-width: 52ch; margin: 24px auto 32px; }
+.hacen-posible .hp-sub { margin: 0 0 14px; font-size: 1.5rem; }
+.hacen-posible .colaboran-lista { justify-content: center; margin-top: 0; }
