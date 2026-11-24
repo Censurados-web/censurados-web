@@ -758,3 +758,9 @@ ul.formas { margin: 0; padding: 0; }
 .apoyos-ampliado { margin-top: 56px; border-top: 3px solid var(--negro); padding-top: 32px; }
 .apoyos-ampliado > .hp-sub { text-align: center; margin-bottom: 24px; }
 .hacen-posible .logos-org img { width: auto !important; max-width: 100%; height: clamp(110px, 14vw, 160px) !important; object-fit: contain; aspect-ratio: auto; }
+.apoyos-ediciones { margin-top: 40px; text-align: left; }
+.apoyos-ediciones .medios-plegable > summary { border-color: var(--negro); color: var(--negro); }
+.apoyos-ediciones .medios-plegable > summary:hover { background: var(--negro); color: var(--amarillo); }
+.ed-apoyos { border-top: 2px solid var(--negro); padding: 12px 0; }
+.ed-apoyos h4 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.2rem; margin: 0 0 6px; }
+.ed-apoyos p { margin: 0; }
