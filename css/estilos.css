@@ -757,3 +757,4 @@ ul.formas { margin: 0; padding: 0; }
 .hacen-posible .colaboran-lista { justify-content: center; margin-top: 0; }
 .apoyos-ampliado { margin-top: 56px; border-top: 3px solid var(--negro); padding-top: 32px; }
 .apoyos-ampliado > .hp-sub { text-align: center; margin-bottom: 24px; }
+.hacen-posible .logos-org img { width: auto !important; max-width: 100%; height: clamp(110px, 14vw, 160px) !important; object-fit: contain; aspect-ratio: auto; }
