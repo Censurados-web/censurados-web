@@ -13,13 +13,13 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   publicar:
     environment:
       name: github-pages
-      url: ${{ steps.despliegue.outputs.page_url }}
+      url: ${{ steps.intento1.outputs.page_url || steps.intento2.outputs.page_url || steps.despliegue.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -27,5 +27,18 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+      # A veces GitHub falla de forma pasajera al publicar: se reintenta solo, sin avisar
+      - id: intento1
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - if: steps.intento1.outcome == 'failure'
+        run: sleep 60
+      - id: intento2
+        if: steps.intento1.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - if: steps.intento2.outcome == 'failure'
+        run: sleep 120
       - id: despliegue
+        if: steps.intento2.outcome == 'failure'
         uses: actions/deploy-pages@v4
